@@ -1,0 +1,75 @@
+Topic: WEEK_1_ONEPAGER_CLEAN_1_ - Page 1 Part 1
+THE BUILD · WEEK 1 SUBMISSION
+One-Pager: Problem & Solution
+WHO HURTS MOST
+Students across Africa struggling with textbooks and generic AI explanations.
+The pain: Textbooks are 400-800 pages. Students are intimidated and don't read
+them. Instead, they photograph specific pages and ask generic AI assistants
+(ChatGPT, Claude, etc.) to explain. These assistants give one-size-fits-all
+answers that conflict with what their professor taught and what their textbook
+actually emphasizes. Students are more confused after asking AI than before.
+Real scenario: A FUTO student asks a generic AI about photosynthesis. Gets an
+explanation. But their Biology textbook emphasizes the Calvin cycle differently,
+and their professor highlighted different equations during lectures. The answer
+is technically correct but completely useless for their actual exam because it
+doesn't match their curriculum.
+When it hurts: Every day. Every assignment. Every exam prep.
+Who it hurts: Every student who relies on textbooks and generic AI (billions
+across Africa).
+Why it matters: Students fail exams despite studying hard because they don't
+actually understand — they just heard explanations, but in ways their brain
+doe
+
+### Chunk
+
+Topic: WEEK_1_ONEPAGER_CLEAN_1_ - Page 1 Part 2
+sn't click with.
+THE CORE PROBLEMS
+Problem 1: Textbooks Are Too Big, So Students Don't Read Them
+Textbooks are 400-800 pages. Students open them, get overwhelmed by size and
+density, and give up. Instead of searching their textbook, they take photos of
+pages and ask generic AI. But generic AI doesn't know their specific curriculum,
+so answers conflict with textbook content and professor emphasis.
+Problem 2: Explanations Aren't Personalized
+Some students learn through analogies. Others need step-by-step logic. Others
+need visual diagrams. Generic AI explains everything the same way to every
+student. Half the class understands, half doesn't — even though they're asking
+the same question about the same topic.
+
+### Chunk
+
+Topic: WEEK_1_ONEPAGER_CLEAN_1_ - Page 2 Part 1
+Problem 3: Generic AI Hallucinates About Curriculum
+Generic AI confidently explains things wrong. It doesn't know what YOUR textbook
+says. It doesn't know what your professor emphasized. Students get answers that
+conflict with their notes and textbook. They don't know who to trust anymore.
+Problem 4: No One Tests If Learning Actually Happened
+A student gets an explanation and moves on. They fail the exam. Why? Because
+nobody tested them. Nobody identified that they understood the WHAT but not the
+WHY. Every conversation resets. It's explanation theater, not actual learning.
+THE SOLUTION
+An AI tutor that:
+- Retrieves explanations from YOUR textbook (not generic AI)
+- Explains concepts in the way YOUR brain works (learns your learning style)
+- Tests you to verify you actually understand (not just heard it)
+- Remembers what confused you before (builds your persistent learning profile)
+- Improves every interaction (gets smarter as you use it)
+Result: Every student gets explanations tailored to how THEY learn, grounded in
+THEIR curriculum, with proof they actually learned it.
+VALIDATION APPROACH
+We will conduct 5+ conversations with real FUTO students to validate:
+1. "Does generic AI fr
+
+### Chunk
+
+Topic: WEEK_1_ONEPAGER_CLEAN_1_ - Page 2 Part 2
+ustrate you when you study?"
+2. "Would you use a tutor that adapted to how you learn?"
+3. "Would you trust explanations from your actual textbook more than
+generic AI?"
+4. "If this system helped you understand better, would you use it instead of
+asking friends or generic AI?"
+5. "What's your biggest frustration with studying right now?"
+Expected result: 5/5 students confirm the problem is real. At least 4/5 say
+they'd use this system.
+ THE BUILD · WEEK 1 SUBMISSION

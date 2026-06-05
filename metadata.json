@@ -1,0 +1,6 @@
+{
+  "name": "Adaptive Tutor",
+  "description": "An intelligent, adaptive learning platform for source-grounded explanations, real-time feedback, metacognitive reflection, and cohort analytics across subjects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

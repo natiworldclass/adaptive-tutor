@@ -1,0 +1,8 @@
+### Topic: Light Absorption
+Light absorption is the initial physical process in photosynthesis. Inside chloroplasts, pigments, chiefly Chlorophyll a and Chlorophyll b, are packed inside thylakoid membranes. When a photon hits a chlorophyll molecule, it excites an electron to a higher energy level. This excitation energy is passed along a network of pigments to the reaction center of Photosystem II, initiating electron transport.
+
+### Topic: RuBisCO Enzyme
+The enzyme Ribulose-1,5-bisphosphate carboxylase-oxygenase, commonly known as RuBisCO, is the most abundant enzyme on Earth. In the Calvin Cycle, RuBisCO is responsible for carbon fixation: the step where carbon dioxide from the air is attached to a 5-carbon sugar called RuBP. This reaction forms an unstable 6-carbon intermediate that immediately splits into two molecules of 3-phosphoglycerate, also called 3-PGA.
+
+### Topic: ATP Synthesis
+ATP synthesis in chloroplasts occurs via photophosphorylation. As electrons flow through the electron transport chain in the thylakoid membrane, protons are pumped from the stroma into the thylakoid lumen. This sets up a strong proton concentration gradient. Protons flow back to the stroma through the channel of ATP Synthase, driving the rotational mechanism that binds ADP and inorganic phosphate to synthesize ATP.

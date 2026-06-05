@@ -1,0 +1,1531 @@
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 2 Part 1
+1 2.2
+H
+1,01
+3 0.98
+Li
+6,94
+11 0.93
+Na
+23,0
+19 0.93
+K
+39,1
+37 0.82
+Rb
+85,5
+55 0.79
+Cs
+132,9
+87 0.7
+Fr
+(223)
+4 1.57
+Be
+9,01
+12 1.31
+Mg
+24,3
+20 1.00
+Ca
+40,1
+38 0.95
+Sr
+87,6
+56 0.89
+Ba
+137,3
+88 0.9
+Ra
+226,0
+21 1.36
+Sc
+45,0
+39 1.22
+Y
+88,9
+57-71
+La-Lu
+Lanthanides
+89-103
+Ac-Lr
+Actinides
+22 1.54
+Ti
+47,9
+40 1.33
+Zr
+91,2
+72 1.30
+Hf
+178,5
+104
+Rf
+(261)
+23 1.63
+V
+50,9
+41 1.60
+Nb
+92,9
+73 1.50
+Ta
+180,9
+105
+Db
+(262)
+24 1.66
+Cr
+52,0
+42 2.16
+Mo
+95,9
+74 2.36
+W
+183,8
+106
+Sg
+(263)
+25 1.55
+Mn
+54,9
+43 1.90
+Tc
+(98)
+75 1.90
+Re
+186,2
+107
+Bh
+(262)
+26 1.33
+Fe
+55,8
+44 2.20
+Ru
+101,1
+76 2.20
+Os
+190,2
+108
+Hs
+(265)
+27 1.88
+Co
+58,9
+45 2.28
+Rh
+102,9
+77 2.20
+Ir
+192,2
+109
+Mt
+(266)
+28 1.91
+Ni
+58,7
+46 2.20
+Pd
+106,4
+78 2.28
+Pt
+195,1
+110
+Ds
+(269)
+29 1.90
+Cu
+63,5
+47 1.93
+Ag
+107,9
+79 2.54
+Au
+197,0
+111
+Rg
+(272)
+30 1.65
+Zn
+65,4
+48 1.69
+Cd
+112,4
+80 2.00
+Hg
+200,6
+112
+Cn
+(277)
+31 1.81
+Ga
+69,7
+13 1.61
+Al
+27,0
+5 2.04
+B
+10,8
+49 1.78
+In
+114,8
+81 1.62
+Tl
+204,4
+113
+Uut
+(284)
+6 2.55
+C
+12,0
+14 1.90
+Si
+28,1
+32 2.01
+Ge
+72,6
+50 1.96
+Sn
+118,7
+82 2.33
+Pb
+207,2
+114
+Uuq
+(289)
+7 3.04
+N
+14,0
+15 2.19
+P
+31,0
+33 2.18
+As
+74,9
+51 2.05
+Sb
+121,8
+83 2.02
+Bi
+209,0
+115
+Uup
+(288)
+8 3.44
+O
+16,0
+16 2.58
+S
+32,1
+34 2.55
+Se
+79,0
+52 2.10
+Te
+127,6
+84 2.00
+Po
+(20
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 2 Part 2
+9)
+116
+Uuh
+(293)
+9 3.98
+F
+19,0
+17 3.16
+Cl
+35,45
+35 2.96
+Br
+79,9
+53 2.66
+I
+126,9
+85 2.20
+At
+(210)
+117
+Uus
+(282)
+10
+Ne
+20,2
+2
+He
+4,00
+18
+Ar
+39,9
+36
+Kr
+83,8
+54
+Xe
+131,3
+86
+Rn
+(222)
+118
+Uuo
+(282)
+1 IA
+2 IIA
+3 IIIB4 IVB5 VB6 VIB7 VIIB8 VII9 VII10 VII11 IB12 IIB
+13 IIIA14 IVA15 VA16 VIA17 VIIA
+18 0
+57 1.10
+La
+138,9
+58 1.12
+Ce
+140,1
+59 1.13
+Pr
+140,9
+60 1.14
+Nd
+144,2
+61
+Pm
+(145)
+62 1.17
+Sm
+150,4
+63
+Eu
+152,0
+64 1.20
+Gd
+157,3
+65
+Tb
+158,9
+66 1.22
+Dy
+162,5
+67 1.23
+Ho
+164,9
+68 1.24
+Er
+167,3
+69 1.25
+Tm
+168,9
+70
+Yb
+173,0
+71 1.27
+Lu
+175,0
+89 1.10
+Ac
+227,0
+90 1.30
+Th
+232,0
+91 1.50
+Pa
+231,0
+92 1.38
+U
+238,0
+93 1.36
+Np
+237,0
+94 1.28
+Pu
+(244)
+95 1.30
+Am
+(243)
+96 1.30
+Cm
+(247)
+97 1.30
+Bk
+(247)
+98 1.30
+Cf
+(251)
+99 1.30
+Es
+(252)
+1001.30
+Fm
+(257)
+1011.30
+Md
+(258)
+1021.30
+No
+(258)
+103
+Lr
+(260)
+Transition MetalMetalMetalloidNon-metalNoble GasLanthanideActinide
+Periodic Table of the Elements
+No EN
+Element
+AMU
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 3
+Everything Science
+Grade 10 Physical Science
+Version1–CAPS
+bySiyavulaandvolunte ers
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 4
+Copyright notice
+Your freedom to legallycopy this book
+Youareallowedanden couragedtofreelycopy thisbook.Youcanphot ocopy,
+print and distribute it as often as you like. You can download it ontoyour
+mobilephone,iPad,PC orﬂashdrive.Youcanb urnittoCD,e-mailitar ound
+oruploadittoyourweb site. Theonlyrestriction isthatyouhavetokeep this
+book,itscoverandshor t-codesunchanged.
+Formoreinformationa bouttheCreativeComm onsAttribution-NoDerivs3.0
+Unported(CCBY-ND3 .0)licenseseehttp://cre ativecommons.org/licenses/by-
+nd/3.0/
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 5 Part 1
+Authors List
+Thisbookisbasedupon theoriginalFreeHighSc hoolScienceTextwhich was
+entirelywrittenbyvolun teeracademics,educato rsandindustryprofessio nals.
+Theirvisionwastosee acurriculumalignedse tofmathematicsandph ysical
+science textbooks which are freely available toanybody and exist under an
+opencopyrightlicense.
+Siyavula core team
+MarkHorner;HeatherW illiams;RenéToerien;Ja yanthiSKMaharaj(Veen a);MorongwaMasemul a;ElizeJones;
+KevinReddy;MariusDi ergaardt;WetsieVisser
+Original Free High School Science Texts core team
+MarkHorner;SamuelH alliday;SarahBlyth;Ror yAdams;SpencerWhea ton
+Original Free High School Science Texts editors
+JayniePadayachee;Joan neBoulle;DianaMulca hy;AnnetteNell;RenéT oerien;DonovanWhitﬁ eld
+Siyavula and Free HighSchool Science Texts contributors
+SarahAbel; Dr. RoryAdams; AndreaAfrica; MatthewAmundsen; BenAnhalt; PrashantArora;AmosBaloyi;
+BonganiBaloyi;RaymondBarbour;Caro-JoyBare ndse;RichardBaxter;Ta raBeckerling;Dr.Sarah Blyth;Sebastian
+Bodenstein; Martin Bongers; Gareth Boxall; Stephan Brandt; Hannes Breytenbach; Alex Briell; Wilbur Britz;
+GraemeBroster;CraigB rown;RichardBurge;B iancaBöhmer;George Calder-Potts;EleanorCa meron;Richard
+Case;SithembileCele
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 5 Part 2
+;A liceChang;RichardChe ng;FannyCherblanc;D r.ChristineChung;Bret tCocks;Stefaan
+Conradie;RoccoCoppe jans;TimCraib;Andrew Craig;TimCrombie;Da nCrytser;Dr. AnneDa browski;Laura
+Daniels;GarethDavies ;JenniferdeBeyer;Dea nnedeBude;MiadeV os;SeanDobbs;Buhle Donga;William
+Donkin;EsmiDreyer;N icoladuToit;Matthew Duddy;FernandoDurre ll;Dr. DanDwyer;Alex Ellis;TomEllis;
+AndrewFisher;Giovann iFranzoni;LindsayGles ener;KevinGodby;Dr. VanessaGodfrey;TerenceGoldberg;Dr.
+JohanGonzalez;Saaligh aGool;HemantGopal; Dr.StephanieGould;U meshreeGovender;Hea therGray;Lynn
+Greeff;CarineGrobbela ar;Dr.TomGutierrez;B rookeHaag;KateHadle y;AlexHall;Dr.SamH alliday;Asheena
+Hanuman;Dr. Melanie DymondHarper;Dr. N icholasHarrison;NeilH art;NicholasHatcher;J asonHayden;
+LauraHayward;Dr.Wil liamP.Heal;Dr.FrithaH ennessy;ShaunHewitso n;MillieHilgart;GrantH illebrand;Nick
+Hobbs;ChrisHoldswor th;Dr. BenneHolwerda;Dr. MarkHorner;Rob ertHovden;Mfandaidz aHove;Jennifer
+Hsieh;LauraHuss;Row anJelley;GrantJelley;C lareJohnson;LukeJorda n;TanaJoseph;Dr. Fab ianJutz;Brian
+Kamanzi;Dr. LutzKampmann;SimonKatende ;NataliaKavalenia;No thandoKhumalo;PaulK im;Dr. Jennifer
+Klay;LaraKruger;Sihle Kubheka;AndrewKubi k;Dr. JannieLeach
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 5 Part 3
+;Nk oanaLebaka;Dr. Tom Leinster;Henry
+Liu; ChristopherLoetscher; MikeLoseby; AmandlaMabona; MalotheMabutho; StuartMacdonald; Dr. Anton
+Machacek; Tshepo Madisha; Batsirai Magunje;Dr. Komal Maheshwari; Michael Malahe; Masoabi Malunga;
+MasiloMapaila; BryonyMartin; NicoleMasureik; JohnMathew; Dr. WillMatthews; ChiedzaMatuso; JoEllen
+McBride; Nikolai Meures; Riana Meyer; Filippo Miatto; Jenny Miller;Abdul Mirza; MapholoModise; Carla
+Moerdyk; Tshwarelo Mohlala; Relebohile Molaoa; Marasi Monyau; Asogan Moodaly; Jothi Moodley; Robert
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 6 Part 1
+Moon; CalvinMoore; BhavaniMorarjee; KholofeloMoyaba; NinaGitauMuchunu; KateMurphy; Emmanuel
+Musonza; Tom Mutabazi; David Myburgh; Kamie Naidu; Nolene Naidu; Gokul Nair; VafaNaraghi; Bridget
+Nash; TyroneNegus; HuwNewton-Hill; BuntuNgcebetsha; Dr. MarkusOldenburg; ThomasO’Donnell; Dr.
+JayniePadayachee;PoveshenPadayachee;Masim baParadza;DavePawso n;JustinPead;Nicolette Pekeur;Sirika
+Pillay;JacquesPlaut;Ba rryPovey;AndreaPrins loo;JosephRaimondo; SanyaRajani;Prof. SergeyRakityansky;
+Alastair Ramlakan; Dr.Matina J. Rassias; Dr.Jocelyn Read; JonathanReader; Jane Reddick;Dr. Matthew
+Reece;RazvanRemsing ;LauraRichter;MaxRic hter;SeanRiddle;Dr.D avidRoberts;Christophe rRoberts;Helen
+Robertson;EvanRobins on;RaoulRontsch;Dr.A ndrewRose;KatieRoss; Jeanne-MariéRoux;Mar kRoux;Bianca
+Ruddy;NitinRughoona uth;KatieRussell;Steve nSam;Dr.CarlSchefﬂe r;ChoHeeShrader;Na thanielSchwartz;
+DuncanScott;HelenSe als;RelebohileSefako;P rof. SergeyRakityansky;SandraSerumaga-Zake; PaulShangase;
+CameronSharp;IanShe rratt;Dr.JamesShort;R ogerSieloff;BrandonSi m;BongaSkozana;Clar eSlotow;Bradley
+Smith;GregSolomon;N icholasSpaull;Dr. AndrewStacey;Dr. JimStasheff;MikeStay;MikeSt ringer;Masixole
+Swartbooi; Tshenolo T
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 6 Part 2
+au; Tim Teatro; Ben Thompson; Shen Tian; Xolani Timbile; Robert Torregrosa; Jimmy
+Tseng;TimvanBeek;N eelsvanderWesthuizen ;FransvanEeden;Pierre vanHeerden;Dr.Marco vanLeeuwen;
+MarinavanZyl;PieterV ergeer;RizmariVersfeld ;MfundoVezi;Mpilon hleVilakazi;Ingridvon Glehn;Tamara
+vonGlehn;Kosmavon Maltitz;HelenWaugh; LeandraWebb;Dr.Daw nWebber;MichelleWe n;Neelsvander
+Westhuizen;Dr. AlexanderWetzler;Dr. SpencerWheaton;VivianWh ite;Dr. GeraldWigger; HarryWiggins;
+HeatherWilliams;Wen dyWilliams;JulieWilso n;TimothyWilson;And rewWood;EmmaWorm auld;Dr. Sahal
+Yacoob;JeanYoussef;E waldZietsman;
+iv
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 7 Part 1
+EverythingScience
+Whenwelookoutsidea teverythinginnature,lo okaroundusateverythi ngmanufacturedorlook upateverything
+in space we cannot butbe struck by the incredible diversity and complexity of life; so many things, that look so
+different, operating in such unique ways. The physical universe really contains incredible complexity.
+Yet, what is even moreremarkable than this seeming complexity is thefact that things in the physical universe
+are knowable. We caninvestigate them, analyse them and understandthem. It is this ability tounderstand the
+physical universe that allows us to transform elements and make technological progress possible.
+If we look back at someof the things that developed over the last century – space travel, advances in medicine,
+wireless communication(from television to mobile phones) and materials a thousand times stronger than steel
+– we see they are not the consequence of magic or some inexplicablephenomena. They wereall developed
+through the study and systematic application ofthe physical sciences. So as we look forward atthe 21st century
+and some of the problems of poverty, disease and pollution that face us, it is partly to the physical sciences we
+need to
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 7 Part 2
+turn.
+For however great thesechallenges seem, we know that the physical universe is knowable and that the dedicated
+study thereof can leadto the most remarkableadvances. There can hardly be a more exciting challenge than
+laying bare the seemingcomplexity of the physical universe and workingwith the incredible diversity therein to
+develop products and services that add real quality to people’s lives.
+Physical sciences is farmore wonderful, exciting and beautiful than magic! It is everywhere. See introductory
+video by Dr. Mark Horner: VPsfk at www.everythingscience.co.za
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 8
+Morethanaregulartext book
+Everything Scienceis not just a Science textbook. It has everythingyou expect from your regular printed school
+textbook, but comes with a whole lot more. For a start, you can download or read it on-lineon your mobile
+phone, computer or iPad, which means you have the convenience of accessing it wherever youare.
+We know that some things are hard to explain inwords. That is why every chapter comes with video lessons and
+explanations which helpbring the ideas and concepts to life. Summary presentations at the end of every chapter
+offer an overview of thecontent covered, with key points highlighted foreasy revision.
+All the exercises insidethe book link to a service where you can get more practice, see the full solution or test
+your skills level on mobile and PC.
+Weareinterestedinwh atyouthink, wonderab outorstrugglewithasy oureadthroughtheboo kandattemptthe
+exercises. That is why we made it possible for you to use your mobile phone or computer to digitally pin your
+question to a page and see what questions and answers other readers pinned up.
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 9
+EverythingScienceony ourmobileorPC
+Youcanhavethistextbo okathandwhereveryou are–whetherathome, onthethetrainoratsch ool. Justbrowse
+totheon-lineversionof EverythingScienceony ourmobilephone,table torcomputer. Toreadit off-lineyoucan
+download a PDF or e-book version.
+To read or download it,go to www.everythingscience.co.za on your phone or computer.
+Usingtheiconsandsho rt-codes
+Inside the book you will ﬁnd these icons to help you spot where videos, presentations, practice tools and more
+helpexist. Theshort-codesnexttotheiconsallow youtonavigatedirectly totheresourceson-line withouthaving
+to search for them.
+(A123) Go directly to a section
+(V123) Video, simula tion or presentation
+(P123) Practice and test your skills
+(Q123) Ask for help or ﬁnd an answer
+To watch the videos on-line, practise your skills or post a question, go to theEverything Sciencewebsite at
+www.everythingscience.co.za on your mobile or PC and enter the short-code inthe navigation box.
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 10
+Videolessons
+Look out for the video icons inside the book. These will take you to video lessons that help bring the ideas and
+concepts on the page tolife. Get extra insight, detailed explanations andworked examples. See the concepts in
+action and hear real people talk about how theyuse maths and science in their work.
+See video explanation (Video: V123)
+Videoexercises
+Wherever there are exercises in the book youwill see icons and short-codes for video solutions, practice and
+help. These short-codeswill take you to video solutions of select exercises to show you step-by-step how to solve
+such problems.
+See video exercise (Video: V123)
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 11
+You can get these videos by:
+•viewing them on-line on your mobile or computer
+•downloading the videos for off-line viewing on your phone or computer
+•ordering a DVD to play on your TV or computer
+•downloading them off-line over Bluetooth or Wi-Fi from select outlets
+To view, download, or for more information, visit the Everything Science website on your phone or computer at
+www.everythingscience.co.za
+Practiceandtestyoursk ills
+One of the best ways toprepare for your tests and exams is to practice answering the same kind of questions you
+will be tested on. At every set of exercises youwill see a practice iconand short-code. This on-line practice for
+mobileandPCwillkeeptrackofyourp erformanceandprogres s,giveyoufeedbackon areaswhichrequiremor e
+attention and suggest which sections or videos tolook at.
+See more practice (QM123)
+To practice and test your skills:
+Go to www.everythingscience.co.za on your mobile phone or PC and enter the short-code.
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 12
+Answerstoyourquestio ns
+Have you ever had a question about a speciﬁc fact, formula or exercisein your textbook and wished you could
+just ask someone? Surely someone else in the country must have had the same question at the same place in the
+textbook.
+Databaseofquestionsa ndanswers
+We invite you to browseour database of questions and answer for every sections and exercises inthe book. Find
+the short-code for the section or exercise whereyou have a question andenter it into the short-code search box
+on theweb or mobi-siteat www.everythingmaths.co.zaor www.everythingscience.co.za. Youwill bedirected to
+all the questions previously asked and answeredfor that section or exercise.
+(A123) Visit this section to post or view questions
+(Q123) Questions or help with a speciﬁc question
+Askanexpert
+Can’tﬁndyourquestion ortheanswertoitinthe questionsdatabase? Thenweinviteyoutotryou rservicewhere
+you can send your question directly to an expert who will reply with ananswer. Again, use the short-code for the
+section or exercise in the book to identify your problem area.
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 13 Part 1
+CONTENTS CONTENTS
+Contents
+1 Skills for science 1
+1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2 Mathematical skills . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.3 Units . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+1.4 Skills in the laboratory . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+1.5 Hazard signs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+2 Classiﬁcation of matter 23
+2.1 Materials . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+2.2 Mixtures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+2.3 Pure substances . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+2.4 Names and formulae of substances . . . . . . . . . . . . . . . . . . . . . . 35
+2.5 Metals, Metalloids and Non-metals . . . . . . . . . . . . . . . . . . . . . . 42
+2.6 Electrical conductors, semi-conductors and insulators . . . . . . . . . . . . 45
+2.7 Thermal Conductors and Insulators . . . . . . . . . . . . . . . . . . . . . . 47
+2.8 Magnetic and Non-magnetic Materials . . . . . . . . . . . . . . . . . . . . 4
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 13 Part 2
+9
+3 States of matter and the kinetic molecular theory 55
+3.1 States of matter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+3.2 The kinetic molecular theory . . . . . . . . . . . . . . . . . . . . . . . . . 59
+4 The atom 63
+4.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+4.2 Models of the atom . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+4.3 Atomic mass and diameter . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+4.4 Structure of the atom . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+4.5 Isotopes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+4.6 Electronic conﬁguration . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+5 The periodic table 95
+5.1 The arrangement of the elements . . . . . . . . . . . . . . . . . . . . . . . 95
+5.2 Chemical properties of the groups . . . . . . . . . . . . . . . . . . . . . . 99
+6 Chemical bonding 105
+6.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+6.2 Lewis structures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 106
+6.3 Covalent Bonding . . . . . . . . . .
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 13 Part 3
+. . . . . . . . . . . . . . . . . . . . . 108
+i
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 14 Part 1
+CONTENTS CONTENTS
+6.4 Ionic bonding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+6.5 Metallic Bonding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+6.6 Writing formulae . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119
+7 Transverse pulses 124
+7.1 Introduction and key concepts . . . . . . . . . . . . . . . . . . . . . . . . 124
+7.2 Pulses: amplitude and length . . . . . . . . . . . . . . . . . . . . . . . . . 125
+7.3 Superposition of pulses . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130
+8 Transverse waves 139
+8.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+8.2 What is a
+transverse wave ? . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+8.3 Crests and troughs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+8.4 Amplitude . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+8.5 Points in phase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+8.6 Period and frequency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+8.7 Speed of a transverse wave . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 14 Part 2
+149
+9 Longitudinal waves 157
+9.1 Introduction and key concepts . . . . . . . . . . . . . . . . . . . . . . . . 157
+9.2 Compression and rarefaction . . . . . . . . . . . . . . . . . . . . . . . . . 158
+9.3 Wavelength and amplitude . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+9.4 Period and frequency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
+9.5 Speed of a longitudinal wave . . . . . . . . . . . . . . . . . . . . . . . . . 161
+10 Sound 166
+10.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 166
+10.2 Speed of sound . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 168
+10.3 Characteristics of a sound wave . . . . . . . . . . . . . . . . . . . . . . . . 172
+10.4 Ultrasound . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+11 Electromagnetic radiation 186
+11.1 What is
+electromagnetic radiation ? . . . . . . . . . . . . . . . . . . . . . . 186
+11.2 Wave-like nature of EM radiation . . . . . . . . . . . . . . . . . . . . . . . 187
+11.3 Electromagnetic spectrum . . . . . . . . . . . . . . . . . . . . . . . . . . . 190
+11.4 Penetrating ability of EM radiation . . . . . . . . . . . . . . . .
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 14 Part 3
+. . . . . . 193
+11.5 Particle-like nature of EM radiation . . . . . . . . . . . . . . . . . . . . . . 196
+12 The particles that substances are made of 203
+12.1 Atoms and compounds . . . . . . . . . . . . . . . . . . . . . . . . . . . . 203
+13 Physical and chemical change 213
+13.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 213
+13.2 Conservation of atoms and mass in reactions . . . . . . . . . . . . . . . . 221
+13.3 Law of constant composition . . . . . . . . . . . . . . . . . . . . . . . . . 225
+14 Representing chemical change 230
+ii
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 15 Part 1
+CONTENTS CONTENTS
+14.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230
+14.2 Balancing chemical equations . . . . . . . . . . . . . . . . . . . . . . . . 232
+15 Magnetism 245
+15.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 245
+15.2 The compass . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253
+16 Electrostatics 259
+16.1 Introduction and key concepts . . . . . . . . . . . . . . . . . . . . . . . . 259
+16.2 Two kinds of charge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 259
+16.3 Conservation of charge . . . . . . . . . . . . . . . . . . . . . . . . . . . . 265
+16.4 Quantisation of charge . . . . . . . . . . . . . . . . . . . . . . . . . . . . 267
+17 Electric circuits 280
+17.1 Potential difference and emf . . . . . . . . . . . . . . . . . . . . . . . . . 280
+17.2 Current . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 282
+17.3 Resistance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 287
+17.4 Series resistors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 290
+17.5 Parallel resistors . . . . . . . . . . . . .
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 15 Part 2
+. . . . . . . . . . . . . . . . . . . 296
+18 Reactions in aqueous solution 314
+18.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314
+18.2 Ions in aqueous solution . . . . . . . . . . . . . . . . . . . . . . . . . . . 314
+18.3 Electrolytes, ionisation and conductivity . . . . . . . . . . . . . . . . . . . 317
+18.4 Precipitation reactions . . . . . . . . . . . . . . . . . . . . . . . . . . . . 320
+18.5 Other types of reactions . . . . . . . . . . . . . . . . . . . . . . . . . . . . 325
+19 Quantitative aspects of chemical change 332
+19.1 Atomic mass and the mole . . . . . . . . . . . . . . . . . . . . . . . . . . 332
+19.2 Composition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 342
+19.3 Amount of substance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350
+19.4 Stoichiometric calculations . . . . . . . . . . . . . . . . . . . . . . . . . . 353
+20 Vectors and scalars 364
+20.1 Introduction to vectors and scalars . . . . . . . . . . . . . . . . . . . . . . 364
+20.2 Properties of vectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 371
+20.3 Techniques of vector addition . . . . . . . . . . . . . . . . . .
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 15 Part 3
+. . . . . . 375
+21 Motion in one dimension 387
+21.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
+21.2 Reference frame . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
+21.3 Speed and velocity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 396
+21.4 Acceleration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
+21.5 Instantaneous velocity and speed . . . . . . . . . . . . . . . . . . . . . . . 405
+21.6 Description of motion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 406
+21.7 Equations of motion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 425
+iii
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 16 Part 1
+CONTENTS CONTENTS
+22 Mechanical energy 443
+22.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
+22.2 Potential energy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
+22.3 Kinetic energy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+22.4 Mechanical energy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 454
+22.5 Conservation of mechanical energy . . . . . . . . . . . . . . . . . . . . . 455
+23 The hydrosphere 470
+23.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 470
+23.2 Interactions of the hydrosphere . . . . . . . . . . . . . . . . . . . . . . . . 470
+23.3 Exploring the hydrosphere . . . . . . . . . . . . . . . . . . . . . . . . . . 471
+23.4 The importance of the hydrosphere . . . . . . . . . . . . . . . . . . . . . 473
+23.5 Threats to the hydrosphere . . . . . . . . . . . . . . . . . . . . . . . . . . 474
+23.6 How pure is our water? . . . . . . . . . . . . . . . . . . . . . . . . . . . . 477
+24 Units used in the book 481
+24.1 Quantities used in the book . . . . . . . . . . . . . . . . . . . . . . . . . 482
+25 Exercise solutions 484
+25.1 Science skills .
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 16 Part 2
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 484
+25.2 Classiﬁcation of matter . . . . . . . . . . . . . . . . . . . . . . . . . . . . 485
+25.3 States of matter and the KMT . . . . . . . . . . . . . . . . . . . . . . . . . 485
+25.4 The atom . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 486
+25.5 The periodic table . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 486
+25.6 Chemical bonding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 487
+25.7 Transverse pulses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 487
+25.8 Transverse waves . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 488
+25.9 Longitudinal waves . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 488
+25.10 Sound . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 488
+25.11 EM radiation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 489
+25.12 The particles that substances are made of . . . . . . . . . . . . . . . . . . 489
+25.13 Physical and chemical change . . . . . . . . . . . . . . . . . . . . . . . . 490
+25.14 Representing chemical change . . . . . . . . . . . . . . . .
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 16 Part 3
+. . . . . . . . 490
+25.15 Magnetism . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 490
+25.16 Electrostatics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 491
+25.17 Electric circuits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 491
+25.18 Reactions in aqueous solutions . . . . . . . . . . . . . . . . . . . . . . . . 492
+25.19 Quantitative aspects of chemical change . . . . . . . . . . . . . . . . . . . 492
+25.20 Vectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 493
+25.21 Motion in one dimension . . . . . . . . . . . . . . . . . . . . . . . . . . . 493
+25.22 Mechanical energy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 494
+iv
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 17 Part 1
+CHAPTER 1. SKILLS FOR SCIENCE
+Skills for science 1
+Introduction ESAA
+In the physical sciences there are many skills that you need to learn. These include working
+with units, basic mathematics skills and laboratory skills. In this chapter we will revise some
+of these skills that you should know before starting to study physical science. This chapter
+is intended as a reference guide to assist you in your journey of studying physical science.
+See introductory video: (
+Video: VPrny at www.everythingscience.co.za)
+Mathematical skills ESAB
+You should be comfortable with scientiﬁc notation and how to write scientiﬁc notation.
+You should also be able to easily convert between different units and change the subject of
+a formula. In addition, concepts such as rate, direct and indirect proportion, fractions and
+ratios and the use of constants in equations are important.
+Rounding off ESAC
+Certain numbers may take an inﬁnite amount of paper and ink to write out. Not only is
+that impossible, but writing numbers out to a high precision (many decimal places) is very
+inconvenient and rarely gives better answers. For this reason we often estimate the number
+to a certain number of decimal places.
+Rou
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 17 Part 2
+nding off a decimal number to a given number of decimal places is the quickest way
+to approximate a number. For example, if you wanted to round-off 2, 6525272 to three
+decimal places then you would ﬁrst count three places after the decimal. Next you mark
+this point with a |: 2, 652|5272. All numbers to the right of | are ignored after you determine
+whether the number in the third decimal place must be rounded up or rounded down. You
+round up the ﬁnal digit (make the digit one more) if the ﬁrst digit after the | is greater than
+1
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 18 Part 1
+1.2 CHAPTER 1. SKILLS FOR SCIENCE
+or equal to 5 and round down (leave the digit alone) otherwise. So, since the ﬁrst digit
+after the | is a 5, we must round up the digit in the third decimal place to a 3 and the ﬁnal
+answer of 2, 6525272 rounded to three decimal places is 2, 653.
+In a calculation that has many steps, it is best to leave the rounding off right until the end.
+This ensures that your answer is more accurate.
+Scientiﬁc notation ESAD
+In science one often needs to work with very large or very small numbers. These can be
+written more easily (and more compactly) in scientiﬁc notation, in the general form:
+N × 10n
+where N is a decimal number between 0 and 10 that is rounded off to a few decimal
+places. n is known as the
+exponent and is an integer. If n > 0 it represents how many
+times the decimal place in N should be moved to the right. If n < 0, then it represents how
+many times the decimal place in N should be moved to the left. For example 3, 24 × 103
+represents 3 240 (the decimal moved three places to the right) and 3, 24 × 10−3 represents
+0, 00324 (the decimal moved three places to the left).
+If a number must be converted into scientiﬁc notation, we need to work out how
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 18 Part 2
+many
+times the number must be multiplied or divided by 10 to make it into a number between
+1 and 10 (i.e. the value of n) and what this number between 1 and 10 is (the value of N).
+We do this by counting the number of decimal places the decimal comma must move.
+For example, write the speed of light ( 299 792 458 m · s−1) in scientiﬁc notation, to two
+decimal places. First, we ﬁnd where the decimal comma must go for two decimal places (to
+ﬁnd N) and then count how many places there are after the decimal comma to determine
+n.
+In this example, the decimal comma must go after the ﬁrst 2, but since the number after
+the 9 is 7, N = 3 , 00. n = 8 because there are 8 digits left after the decimal comma. So the
+speed of light in scientiﬁc notation, to two decimal places is 3, 00 × 108 m · s−1.
+We can also perform addition, subtraction, multiplication and division with scientiﬁc no-
+tation. The following two worked examples show how to do this:
+Example 1: Addition and subtraction with scientiﬁc no-
+tation
+QUESTION
+1, 99 × 10−26 + 1 , 67 × 10−27 − 2, 79 × 10−25 =?
+2
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 19
+CHAPTER 1. SKILLS FOR SCIENCE 1.2
+SOLUTION
+Step 1 : Make all the exponents the same
+To add or subtract numbers in scientiﬁc notation we must make all the
+exponents the same:
+1, 99 × 10−26 = 0 , 199 × 10−25 and
+1, 67 × 10−27 = 0 , 0167 × 10−25
+Step 2 : Carry out the addition and subtraction
+Now that the exponents are the same we can simply add or subtract
+the N part of each number:
+0, 199 + 0 , 0167 − 2, 79 = −2, 5743
+Step 3 : Write the ﬁnal answer
+To get the ﬁnal answer we put the common exponent back:
+−2, 5743 × 10−25
+Note that we follow the same process if the exponents are positive. For example 5, 1 ×
+103 + 4 , 2 × 104 = 4 , 71 × 104.
+Example 2: Multiplication and division with scientiﬁc
+notation
+QUESTION
+1, 6 × 10−19 × 3, 2 × 10−19 ÷ 5 × 10−21
+SOLUTION
+Step 1 : Carry out the multiplication
+For multiplication and division the exponents do not need to be the
+same. For multiplication we add the exponents and multiply the N
+terms:
+1, 6 ×10−19 ×3, 2 ×10−19 = (1 , 6 ×3, 2) ×10−19+(−19) = 5 , 12 ×10−38
+Step 2 : Carry out the division
+3
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 20 Part 1
+1.3 CHAPTER 1. SKILLS FOR SCIENCE
+For division we subtract the exponents and divide the N terms. Using
+our result from the previous step we get:
+2, 56 × 10−38 ÷ 5 × 10−21 = (5 , 12 ÷ 5) × 10−38−(−19) = 1 , 024 × 10−18
+Step 3 : Write the ﬁnal answer
+The answer is: 1, 024 × 10−18
+Note that we follow the same process if the exponents are positive. For example: 5, 1 ×
+103 × 4, 2 × 104 = 21 , 42 × 107 = 2 , 142 × 108
+Units ESAE
+Imagine you had to make curtains and needed to buy fabric. The shop assistant would
+need to know how much fabric you needed. Telling her you need fabric 2 wide and 6 long
+would be insufﬁcient — you have to specify the unit (i.e. 2
+metres wide and 6 metres long).
+Without the unit the information is incomplete and the shop assistant would have to guess.
+If you were making curtains for a doll’s house the dimensions might be 2 centimetres wide
+and 6 centimetres long!
+It is not just lengths that have units, all physical quantities have units (e.g. time, tempera-
+ture, distance, etc.).
+DEFINITION: Physical Quantity
+A physical quantity is anything that you can measure. For example, length,
+temperature, distance and time are physical quantities.
+There are many different
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 20 Part 2
+systems of units. The main systems of units are:
+• SI units
+• c.g.s units
+• Imperial units
+• Natural units
+4
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 21
+CHAPTER 1. SKILLS FOR SCIENCE 1.3
+SI Units ESAF
+We will be using the SI units in this course. SI units are the internationally agreed upon
+units.
+DEFINITION: SI Units
+The name SI units comes from the French Système International d’Unités ,
+which means international system of units .
+There are seven base SI units. These are listed in table 1.1. All physical quantities have
+units which can be built from these seven base units. So, it is possible to create a different
+set of units by deﬁning a different set of base units.
+These seven units are called base units because none of them can be expressed as combi-
+nations of the other six. These base units are like the 26 letters of the alphabet for English.
+Many different words can be formed by using these letters.
+Base quantity Name Symbol
+length metre m
+mass kilogram kg
+time second s
+electric current ampere A
+temperature kelvin K
+amount of substance mole mol
+luminous intensity candela cd
+Table 1.1: SI Base Units
+The Other Systems of Units ESAG
+The SI Units are not the only units available, but they are most widely used. In Science
+there are three other sets of units that can also be used. These are mentioned here for
+5
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 22 Part 1
+1.3 CHAPTER 1. SKILLS FOR SCIENCE
+interest only.
+• c.g.s. Units
+In the c.g.s. system, the metre is replaced by the centimetre and the kilogram is
+replaced by the gram. This is a simple change but it means that all units derived from
+these two are changed. For example, the units of force and work are different. These
+units are used most often in astrophysics and atomic physics.
+• Imperial Units
+Imperial units arose when kings and queens decided the measures that were to be
+used in the land. All the imperial base units, except for the measure of time, are
+different to those of SI units. This is the unit system you are most likely to encounter
+if SI units are not used. Examples of imperial units are pounds, miles, gallons and
+yards. These units are used by the Americans and British. As you can imagine,
+having different units in use from place to place makes scientiﬁc communication
+very difﬁcult. This was the motivation for adopting a set of internationally agreed
+upon units.
+• Natural Units
+This is the most sophisticated choice of units. Here the most fundamental discovered
+quantities (such as the speed of light) are set equal to 1. The argument for this choice
+is that all other quant
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 22 Part 2
+ities should be built from these fundamental units. This system
+of units is used in high energy physics and quantum mechanics.
+Combinations of SI base units ESAH
+To make working with units easier, some combinations of the base units are given special
+names, but it is always correct to reduce everything to the base units. Table 1.2 lists some
+examples of combinations of SI base units that are assigned special names. Do not be
+concerned if the formulae look unfamiliar at this stage - we will deal with each in detail in
+the chapters ahead (as well as many others)!
+It is very important that you are able to recognise the units correctly. For example, the
+newton (N) is another name for the kilogram metre per second squared (kg·m·s−2), while
+the kilogram metre squared per second squared (kg·m2·s−2) is called the joule (J).
+6
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 23 Part 1
+CHAPTER 1. SKILLS FOR SCIENCE 1.3
+Quantity Formula Unit Expressed in Base Units Name of Combination
+Force ma kg · m · s−2 N (newton)
+Frequency 1
+T s−1 Hz (hertz)
+Work F s kg · m2 · s−2 J (joule)
+Table 1.2: Some examples of combinations of SI base units assigned special names
+Preﬁxes of base units ESAI
+Now that you know how to write numbers in scientiﬁc notation, another important aspect
+of units is the preﬁxes that are used with the units. In the case of units, the preﬁxes have
+a special use. The kilogram (kg) is a simple example. 1 kg is equal to 1 000 g or 1 × 103
+g. Grouping the 103 and the g together we can replace the 103 with the preﬁx k (kilo).
+Therefore the k takes the place of the 103. The kilogram is unique in that it is the only SI
+base unit containing a preﬁx.
+Tip
+When writing com-
+binations of base SI
+units, place a dot ( ·)
+between the units to
+indicate that different
+base units are used.
+For example, the sym-
+bol for metres per sec-
+ond is correctly writ-
+ten as m ·s−1, and not
+as ms −1 or m/s. Al-
+though the last two
+options will be ac-
+cepted in tests and ex-
+ams, we will only use
+the ﬁrst one in this
+book.
+In science, all the preﬁxes used with units are some power
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 23 Part 2
+of 10. Table 1.3 lists some of
+these preﬁxes. You will not use most of these preﬁxes, but those preﬁxes listed in bold
+should be learnt. The case of the preﬁx symbol is very important. Where a letter features
+twice in the table, it is written in uppercase for exponents bigger than one and in lowercase
+for exponents less than one. For example M means mega (10 6) and m means milli (10 −3).
+7
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 24
+1.3 CHAPTER 1. SKILLS FOR SCIENCE
+Preﬁx Symbol Exponent Preﬁx Symbol Exponent
+yotta Y 1024 yocto y 10−24
+zetta Z 1021 zepto z 10−21
+exa E 1018 atto a 10−18
+peta P 1015 femto f 10−15
+tera T 1012 pico p 10−12
+giga G 109 nano n 10−9
+mega M 106 micro µ 10−6
+kilo k 103 milli m 10−3
+hecto h 102 centi c 10−2
+deca da 101 deci d 10−1
+Table 1.3: Unit Preﬁxes
+Tip
+There is no space and
+no dot between the
+preﬁx and the symbol
+for the unit.
+Here are some examples of the use of preﬁxes:
+• 40 000 m can be written as 40 km (kilometre)
+• 0, 001 g is the same as 1 × 10−3 g and can be written as 1 mg (milligram)
+• 2, 5 × 106 N can be written as 2, 5 MN (meganewton)
+• 250 000 A can be written as 250 kA (kiloampere) or 0, 250 MA (megaampere)
+• 0, 000000075 s can be written as 75 ns (nanoseconds)
+• 3 × 10−7 mol can be rewritten as 0, 3 × 10−6 mol, which is the same as 0, 3 µmol
+(micromol)
+Exercise 1 - 1
+1. Carry out the following calculations:
+a. 1, 63 × 105 + 4 , 32 × 106 − 8, 53 × 105
+b. 7, 43 × 103 ÷ 6, 54 × 107 × 3, 33 × 105
+c. 6, 21434534 × 10−5 × 3, 2555 × 10−3 + 6 , 3 × 10−4
+2. Write the following in scientiﬁc notation using Table 1.3 as a reference.
+a. 0, 511 MV
+b. 10 cℓ
+c. 0, 5 µm
+8
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 25 Part 1
+CHAPTER 1. SKILLS FOR SCIENCE 1.3
+d. 250 nm
+e. 0, 00035 hg
+3. Write the following using the preﬁxes in Table 1.3.
+a. 1, 602 × 10−19 C
+b. 1, 992 × 106 J
+c. 5, 98 × 104 N
+d. 25 × 10−4 A
+e. 0, 0075 × 106 m
+More practice video solutions or help at www.everythingscience.co.za
+(1.) 02u4 (2.) 01v7 (3.) 01v8
+The Importance of Units ESAJ
+Without units much of our work as scientists would be meaningless. We need to express
+our thoughts clearly and units give meaning to the numbers we measure and calculate.
+Depending on which units we use, the numbers are different. For example if you have
+12 water, it means nothing. You could have 12 ml of water, 12 litres of water, or even 12
+bottles of water. Units are an essential part of the language we use. Units must be speciﬁed
+when expressing physical quantities. Imagine that you are baking a cake, but the units, like
+grams and millilitres, for the ﬂour, milk, sugar and baking powder are not speciﬁed!
+Group Discussion: Importance of Units
+Work in groups of 5 to discuss other possible situations where using the in-
+correct set of units can be to your disadvantage or even dangerous. Look for
+examples at home, at school, at a hospital, when travelling a
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 25 Part 2
+nd in a shop.
+Case Study: The importance of units
+Read the following extract from CNN News 30 September 1999 and answer
+the questions below.
+NASA: Human error caused loss of Mars orbiter November 10, 1999
+Failure to convert English measures to metric values caused the loss of the Mars
+Climate Orbiter, a spacecraft that smashed into the planet instead of reaching a
+safe orbit, a NASA investigation concluded Wednesday.
+9
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 26 Part 1
+1.3 CHAPTER 1. SKILLS FOR SCIENCE
+The Mars Climate Orbiter, a key craft in the space agency’s exploration of the
+red planet, vanished on 23 September after a 10 month journey. It is believed
+that the craft came dangerously close to the atmosphere of Mars, where it pre-
+sumably burned and broke into pieces.
+An investigation board concluded that NASA engineers failed to convert En-
+glish measures of rocket thrusts to newton, a metric system measuring rocket
+force. One English pound of force equals 4,45 newtons. A small difference
+between the two values caused the spacecraft to approach Mars at too low an
+altitude and the craft is thought to have smashed into the planet’s atmosphere
+and was destroyed.
+The spacecraft was to be a key part of the exploration of the planet. From its
+station about the red planet, the Mars Climate Orbiter was to relay signals from
+the Mars Polar Lander, which is scheduled to touch down on Mars next month.
+“The root cause of the loss of the spacecraft was a failed translation of English
+units into metric units and a segment of ground-based, navigation-related mis-
+sion software,” said Arthur Stephenson, chairman of the investigation board.
+Questions:
+1. Why
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 26 Part 2
+did the Mars Climate Orbiter crash? Answer in your own words.
+2. How could this have been avoided?
+3. Why was the Mars Orbiter sent to Mars?
+4. Do you think space exploration is important? Explain your answer.
+How to change units ESAK
+It is very important that you are aware that different systems of units exist. Furthermore, you
+must be able to convert between units. Being able to change between units (for example,
+converting from millimetres to metres) is a useful skill in Science.
+The following conversion diagrams will help you change from one unit to another.
+mm m km
+÷1000 ÷1000
+×1000 ×1000
+Figure 1.2: The distance conversion table
+If you want to change millimetre to metre, you divide by 1000 (follow the arrow from mm
+to m); or if you want to change kilometre to millimetre, you multiply by 1000 ×1000.
+The same method can be used to change millilitre to litre or kilolitre. Use Figure 1.3 to
+10
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 27
+CHAPTER 1. SKILLS FOR SCIENCE 1.3
+change volumes:
+m ℓ ℓ kℓ
+÷1000 ÷1000
+×1000 ×1000
+dm 3 m 3cm 3
+Figure 1.3: The volume conversion table
+Example 3: Conversion 1
+QUESTION
+Express 3 800 mm in metres.
+SOLUTION
+Step 1 : Use the conversion table
+Use Figure 1.2. Millimetre is on the left and metre in the middle.
+Step 2 : Decide which direction you are moving
+You need to go from mm to m, so you are moving from left to right.
+Step 3 : Write the answer
+3800 mm ÷ 1 000 = 3 , 8 m
+Example 4: Conversion 2
+11
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 28
+1.3 CHAPTER 1. SKILLS FOR SCIENCE
+QUESTION
+Convert 4,56 kg to g.
+SOLUTION
+Step 1 : Find the two units on the conversion diagram.
+Use Figure 1.2. Kilogram is the same as kilometre and gram is the same
+as metre.
+Step 2 : Decide whether you are moving to the left or to the right.
+You need to go from kg to g, so it is from right to left.
+Step 3 : Read from the diagram what you must do and ﬁnd the answer.
+4, 56 kg × 1 000 = 4 560 g
+Two other useful conversions
+Very often in science you need to convert speed and temperature. The following two rules
+will help you do this:
+1. Converting speed
+When converting km · h−1 to m · s−1 you multiply by 1 000 and divide by 3 600
+(1000 m
+3600 s ). For example 72 km · h−1 ÷ 3, 6 = 20 m · s−1.
+When converting m · s−1 to km · h−1, you multiply by 3 600 and divide by 1 000
+( 3600 s
+1000 m). For example 30 m · s−1 × 3, 6 = 108 km · h−1.
+2. Converting temperature
+Converting between the Kelvin and Celsius temperature scales is simple. To convert
+from Celsius to Kelvin add 273. To convert from Kelvin to Celsius subtract 273.
+Representing the Kelvin temperature by TK and the Celsius temperature by T◦C:
+TK = T◦C + 273
+12
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 29 Part 1
+CHAPTER 1. SKILLS FOR SCIENCE 1.3
+Changing the subject of a formula ESAL
+Very often in science you will have to change the subject of a formula. We will look at two
+examples. (Do not worry if you do not yet know what the terms and symbols mean, these
+formulae will be covered later in the book.)
+1. Moles
+The equation to calculate moles from molar mass is: n = m
+M , where n is the number
+of moles, m is the mass and M is the molar mass. As it is written we can easily ﬁnd
+the number of moles of a substance. But what if we have the number of moles and
+want to ﬁnd the molar mass? We note that we can simply multiply both sides of the
+equation by the molar mass and then divide both sides by the number of moles:
+n = m
+M
+nM = m
+M = m
+n
+And if we wanted the mass we would use: m = nM.
+2. Energy of a photon
+The equation for the energy of a photon is E = h c
+λ , where E is the energy, h is
+Planck’s constant, c is the speed of light and λ is the wavelength. To get c we can do
+the following:
+E = h c
+λ
+Eλ = hc
+c = Eλ
+h
+Similarly we can ﬁnd the wavelength we use: λ = hc
+E and to ﬁnd Planck’s constant
+we use: h = Eλ
+c .
+Rate, proportion and ratios ESAM
+In science we often want to know how a quantity
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 29 Part 2
+relates to another quantity or how some-
+thing changes over a period of time. To do this we need to know about rate, proportion
+and ratios.
+Rate:
+13
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 30 Part 1
+1.3 CHAPTER 1. SKILLS FOR SCIENCE
+The rate at which something happens is the number of times that it happens over a period
+of time. The rate is always a change per time unit. So we can get rate of change of velocity
+per unit time ( ∆⃗ v
+t ) or the rate of change in concentration per unit time (or ∆C
+t ). (Note that
+∆ represents a change in).
+Ratios and fractions:
+A fraction is a number which represents a part of a whole and is written as a
+b , where a is
+the numerator and b is the denominator. A ratio tells us the relative size of one quantity
+(e.g. number of moles of reactants) compared to another quantity (e.g. number of moles of
+product): 2 : 1 , 4 : 3 , etc. Ratios can also be written as fractions as percentages (fractions
+with a denominator of 100).
+Proportion:
+Proportion is a way of describing relationships between values or between constants. We
+can say that x is directly proportional to y (x ∝ y) or that a is inversely proportional to
+b (a ∝ 1
+b ). It is important to understand the difference between directly and inversely
+proportional.
+• Directly proportional
+Two values or constants are directly proportional when a change in one leads to the
+same change in the other. This
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 30 Part 2
+is a more-more relationship. We can represent this as
+y ∝ x or y = kx where k is the proportionality constant. We have to include k since
+we do not know by how much x changes when y changes. x could change by 2 for
+every change of 1 in y. If we plot two directly proportional variables on a graph, then
+we get a straight line graph that goes through the origin (0; 0) :
+• Inversely proportional
+Two values or constants are inversely proportional when a change in one leads to the
+opposite change in the other. We can represent this as y = k
+x . This is a more-less
+relationship. If we plot two inversely proportional variables we get a curve that never
+cuts the axis:
+14
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 31
+CHAPTER 1. SKILLS FOR SCIENCE 1.3
+Constants in equations ESAN
+A constant in an equation always has the same value. For example the speed of light
+(c = 2 , 99×108 m· s−1), Planck’s constant ( h) and Avogadro’s number ( NA) are all examples
+of constants that are use in science. The following table lists all the constants that you will
+encounter in this book.
+Constant Symbol Value and units SI Units
+Atomic mass unit u 1, 67 × 10−24 g 1, 67 × 10−27 kg
+Charge on an electron e −1, 6 × 10−19 C −1, 6 × 10−19 s · A
+Speed of sound (in air, at 25◦) 344m · s−1
+Speed of light c 3 × 108m · s−1
+Planck’s constant h 6, 626 × 10−34 J · s 6, 626 × 10−34 kg · m2s−1
+Avogadro’s number NA 6, 022 × 1023
+Gravitational acceleration g 9, 8 m · s−1
+Trigonometry ESAO
+Trigonometry is the relationship between the angles and sides of right angled triangles.
+Trigonometrical relationships are ratios and therefore have no units. You should know the
+following trigonometric ratios:
+A
+adjacent
+hypotenuse
+opposite
+• Sine
+This is deﬁned as sin A = opposite
+hypotenuse
+• Cosine
+This is deﬁned as cos A = adjacent
+hypotenuse
+15
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 32
+1.3 CHAPTER 1. SKILLS FOR SCIENCE
+• Tangent
+This is deﬁned as tan A = opposite
+adjacent
+Exercise 1 - 2
+1. Write the following quantities in scientiﬁc notation:
+a. 10130 Pa to 2 decimal places
+b. 978,15 m ·s−2 to one decimal place
+c. 0,000001256 A to 3 decimal places
+2. For each of the following symbols, write out the unit in full and write what
+power of 10 it represents:
+a. µg
+b. mg
+c. kg
+d. Mg
+3. Write each of the following in scientiﬁc notation, correct to 2 decimal
+places:
+a. 0,00000123 N
+b. 417 000 000 kg
+c. 246800 A
+d. 0,00088 mm
+4. For each of the following, write the measurement using the correct symbol
+for the preﬁx and the base unit:
+a. 1,01 microseconds
+b. 1 000 milligrams
+c. 7,2 megametres
+d. 11 nanolitre
+5. The Concorde is a type of aeroplane that ﬂies very fast. The top speed
+of the Concorde is 844 km ·hr−1. Convert the Concorde’s top speed to
+m·s−1.
+6. The boiling point of water is 100 ◦C. What is the boiling point of water in
+kelvin?
+More practice video solutions or help at www.everythingscience.co.za
+(1.) 01v9 (2.) 01va (3.) 01vb (4.) 01vc (5.) 01vd (6.) 01ve
+16
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 33 Part 1
+CHAPTER 1. SKILLS FOR SCIENCE 1.4
+Skills in the laboratory ESAP
+To carry out experiments in the laboratory you need to know how to properly present
+your experimental results, you also need to know how to read instruments and how to
+interpret your data. A laboratory (be it for physics, chemistry or other sciences) can be a
+very dangerous and daunting place. However, if you follow a few simple guidelines you
+can safely carry out experiments in the laboratory without endangering yourself or others
+around you.
+Experiments ESAQ
+When a scientist performs experiments the following process is followed:
+• Observe an event and identify an answerable question about the event.
+• Make a hypothesis (theory) about the event that gives a sensible result.
+• Design an experiment to test the theory. This includes identifying the ﬁxed factors
+(what will not vary in the experiment), identifying the independent variable (this is
+set) and the dependent variable (what you will actually measure).
+• Collect data accurately and interpret the data.
+• Draw conclusions from the results of the experiment.
+• Decide whether the hypothesis is correct or not.
+• Verify your results by repeating the experiment or gett
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 33 Part 2
+ing someone else to repeat the
+experiment.
+This process is known as the scientiﬁc method. In the work that you will do you will be
+given the ﬁrst three items and be required to determine the last four items. For verifying
+results you should see what your classmates obtained for their experiment.
+In science the recording of practical work follows a speciﬁc layout. You should always
+present your work using this layout, as it will help any other person be able to understand
+and repeat your experiment.
+• Aim: A brief sentence describing the purpose of the experiment.
+• Apparatus: A sketch of the apparatus and a list of the apparatus
+17
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 34 Part 1
+1.4 CHAPTER 1. SKILLS FOR SCIENCE
+• Method: A list of the steps followed to carry out the experiment
+• Results: Tables, graphs and observations about the experiment
+• Discussion: What your results mean
+• Conclusion: A brief sentence concluding whether or not the aim was met
+To perform experiments correctly and accurately you also need to know how to work with
+various pieces of equipment. The next section details some of the apparatus that you need
+to know, as well as how to correctly work with it.
+As you work through the experiments in the book you will be given guidance on how to
+present your data. By the end of the year you should be able to select the appropriate
+method to show your data, whether it is a table, a graph or an equation.
+You will also need to know how to interpret your data. For example given a table of values,
+what can you say about those values. Also you should be able to say whether you are
+performing a qualitative (descriptive) or a quantitative (numbers) analysis.
+Laboratory apparatus ESAR
+Listed here are some of the common pieces of apparatus that you will be working with in
+the laboratory. You should be able to name all the apparatus listed here as well as m
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 34 Part 2
+ake a
+simple sketch of it.
+18
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 35
+CHAPTER 1. SKILLS FOR SCIENCE 1.4
+Item Photo Sketch
+Beaker
+Flask
+Test tubes
+Bunsen burner
+Measuring cylinder
+Pipette
+Watch glass
+Thermometer
+Funnel
+19
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 36 Part 1
+1.4 CHAPTER 1. SKILLS FOR SCIENCE
+The following image shows the correct setup for heating liquids on a Bunsen burner:
+When reading any instrument (such as a measuring cylinder, a pipette, etc.) always make
+sure that the instrument is level and that your eye is at the level of the top of the liquid.
+General safety rules ESAS
+The following are some of the general guidelines and rules that you should always observe
+when working in a laboratory.
+1. You are responsible for your own safety as well as the safety of others in the labora-
+tory.
+2. Do not eat or drink in the laboratory. Do not use laboratory glassware to eat or drink
+from.
+3. Always behave responsibly in the laboratory. Do not run around or play practical
+jokes.
+4. In case of accidents or chemical spills call your teacher at once.
+5. Always check with your teacher how to dispose of waste. Chemicals should not be
+disposed of down the sink.
+6. Only perform the experiments that your teacher instructs you to. Never mix chemi-
+cals for fun.
+7. Never perform experiments alone.
+8. Always check the safety data of any chemicals you are going to use.
+9. Follow the given instructions exactly. Do not mix up steps or try things in a diff
+
+### Chunk
+
+Topic: Gr10_PhysicalSciences_Learner_Eng - Page 36 Part 2
+erent
+order.
+10. Be alert and careful when handling chemicals, hot glassware, etc.
+11. Ensure all Bunsen burners are turned off at the end of the practical and all chemical
+containers are sealed.
+12. Never add water to acid. Always add the acid to water.
+13. Never heat thick glassware as it will break. (i.e. do not heat measuring cylinders).
+14. When you are smelling chemicals, place the container on a laboratory bench and
+20
