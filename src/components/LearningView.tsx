@@ -16,6 +16,39 @@ interface SourceMetadata {
   chunk_count: number;
   preview_title?: string;
   preview_text?: string;
+  detected_title?: string;
+  subject?: string;
+  chapters?: Array<{ chapter_number?: number; title?: string; pages?: number[]; concepts?: string[] }>;
+  concept_count?: number;
+}
+
+interface QuickCheck {
+  prompt: string;
+  options: string[];
+  correct_index?: number;
+  explanation?: string;
+}
+
+interface ConceptGraph {
+  detected_title?: string;
+  subject?: string;
+  chapters?: Array<{ chapter_number?: number; title?: string; pages?: number[]; concepts?: string[] }>;
+  concepts?: Array<{
+    id?: string;
+    name: string;
+    description?: string;
+    source_refs?: Array<{ title?: string; page_number?: number; chapter_number?: number }>;
+    prerequisites?: string[];
+    next_concepts?: string[];
+  }>;
+}
+
+interface SessionOutcome {
+  completed: boolean;
+  confidence_score: number;
+  mastered_concept?: string;
+  suggested_next_concept?: ConceptGraph["concepts"] extends Array<infer T> ? T : never;
+  reason?: string;
 }
 
 const emptySource: RetrievedSource = {
@@ -38,10 +71,17 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
   const [isSending, setIsSending] = useState(false);
   const [responseLanguage, setResponseLanguage] = useState<"EN" | "FR" | "SW" | "HA" | "YO">("EN");
   const [adaptationMode, setAdaptationMode] = useState<"analogy" | "step-step" | "visual" | "peer">("step-step");
-  const [hintLevel, setHintLevel] = useState(2);
+  const [hintLevel, setHintLevel] = useState(1);
+  const [checkDifficulty, setCheckDifficulty] = useState<"diagnostic" | "easy" | "medium" | "hard">("diagnostic");
   const [activeMobileSubTab, setActiveMobileSubTab] = useState<"chat" | "source">("chat");
   const [activeSources, setActiveSources] = useState<RetrievedSource[]>([emptySource]);
   const [showAssessment, setShowAssessment] = useState(false);
+  const [quickCheck, setQuickCheck] = useState<QuickCheck | null>(null);
+  const [selectedQuickCheckIndex, setSelectedQuickCheckIndex] = useState<number | null>(null);
+  const [activeQuestion, setActiveQuestion] = useState<string | null>(null);
+  const [sourceMetadata, setSourceMetadata] = useState<SourceMetadata | null>(null);
+  const [conceptGraph, setConceptGraph] = useState<ConceptGraph | null>(null);
+  const [sessionOutcome, setSessionOutcome] = useState<SessionOutcome | null>(null);
   const [showReflectModal, setShowReflectModal] = useState(false);
   const [reflectionText, setReflectionText] = useState("");
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -50,6 +90,7 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
   const [isUploading, setIsUploading] = useState(false);
 
   const listEndRef = useRef<HTMLDivElement>(null);
+  const activeRequestRef = useRef<AbortController | null>(null);
   const activeSource = activeSources[0] || emptySource;
 
   useEffect(() => {
@@ -62,6 +103,9 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
         const response = await fetch("/api/sources/current");
         const data = await response.json();
         const source: SourceMetadata | null = data.source || null;
+        const graph: ConceptGraph | null = data.concept_graph || null;
+        setConceptGraph(graph);
+        setSourceMetadata(source);
         if (source?.preview_text) {
           setActiveSources([
             {
@@ -88,44 +132,57 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
   const getHintExplanation = () => {
     switch (hintLevel) {
       case 1:
-        return "Broad guidance";
+        return "Orienting";
       case 2:
-        return "Narrowing pointers";
+        return "Narrowing";
       case 3:
-        return "Source-backed explanation";
+        return "Similar Example";
       case 4:
-        return "Worked explanation";
+        return "Full Reasoning";
       default:
         return "";
     }
   };
 
-  const handleSend = async () => {
-    if (!inputText.trim() || isSending) return;
+  const submitTutorTurn = async (
+    visibleUserText: string,
+    backendUserText = visibleUserText,
+    historyExtras: Message[] = [],
+  ) => {
+    if (!visibleUserText.trim() || isSending || activeRequestRef.current) return;
 
-    const userText = inputText.trim();
-    setInputText("");
+    const controller = new AbortController();
+    activeRequestRef.current = controller;
     setIsSending(true);
     setShowAssessment(false);
+    setQuickCheck(null);
+    setSelectedQuickCheckIndex(null);
+    setSessionOutcome(null);
 
     const studentMessage: Message = {
       id: "std-" + Date.now(),
       sender: "student",
-      text: userText,
+      text: visibleUserText,
       timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
     };
 
     setMessages((prev) => [...prev, studentMessage]);
+    const outgoingHistory = [...messages.slice(-8), ...historyExtras];
 
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        signal: controller.signal,
         body: JSON.stringify({
-          message: userText,
-          history: messages.slice(-6),
+          message: backendUserText,
+          history: outgoingHistory,
           language: responseLanguage,
           mode: adaptationMode,
+          current_hint_level: hintLevel,
+          current_check_difficulty: checkDifficulty,
+          auto_hint: true,
+          active_question: activeQuestion,
         }),
       });
 
@@ -133,7 +190,16 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
       const returnedSources: RetrievedSource[] = Array.isArray(data.sources) ? data.sources : [];
       const candidateSources: RetrievedSource[] = Array.isArray(data.candidate_sources) ? data.candidate_sources : [];
       const groundingStatus = typeof data.grounding_status === "string" ? data.grounding_status : "unknown";
-      const retrievalNote = typeof data.retrieval_note === "string" ? data.retrieval_note : "";
+      const effectiveHintLevel = typeof data.effective_hint_level === "number" ? data.effective_hint_level : hintLevel;
+      const returnedQuickCheck = data.quick_check;
+      const returnedSessionOutcome = data.session_outcome;
+      const returnedCheckDifficulty = typeof data.check_difficulty === "string" ? data.check_difficulty : checkDifficulty;
+      const returnedActiveQuestion = typeof data.active_question === "string" ? data.active_question : activeQuestion;
+      setActiveQuestion(returnedActiveQuestion);
+      setHintLevel(Math.min(4, Math.max(1, effectiveHintLevel)));
+      if (["diagnostic", "easy", "medium", "hard"].includes(returnedCheckDifficulty)) {
+        setCheckDifficulty(returnedCheckDifficulty as typeof checkDifficulty);
+      }
       if (returnedSources.length) {
         setActiveSources(returnedSources);
       } else if (candidateSources.length) {
@@ -142,8 +208,8 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
 
       const sourceNote = returnedSources.length
         ? "\n\nSources used: " + returnedSources.map((source) => source.title).join(", ")
-        : candidateSources.length && groundingStatus === "insufficient_context"
-        ? "\n\nRetrieved candidates checked, but not enough context was found to ground the answer. Reason: " + retrievalNote
+        : groundingStatus === "insufficient_context"
+        ? ""
         : "\n\nNo strong source match was found in the current indexed file.";
 
       setMessages((prev) => [
@@ -155,8 +221,45 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
           timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         },
       ]);
-      setShowAssessment(true);
+      if (
+        returnedQuickCheck &&
+        typeof returnedQuickCheck.prompt === "string" &&
+        Array.isArray(returnedQuickCheck.options) &&
+        returnedQuickCheck.options.length >= 2
+      ) {
+        setQuickCheck({
+          prompt: returnedQuickCheck.prompt,
+          options: returnedQuickCheck.options.slice(0, 4),
+          correct_index:
+            typeof returnedQuickCheck.correct_index === "number"
+              ? returnedQuickCheck.correct_index
+              : undefined,
+          explanation:
+            typeof returnedQuickCheck.explanation === "string"
+              ? returnedQuickCheck.explanation
+              : undefined,
+        });
+        setShowAssessment(false);
+      } else {
+        setShowAssessment(effectiveHintLevel >= 4 || groundingStatus === "insufficient_context");
+      }
+      if (returnedSessionOutcome?.completed) {
+        setSessionOutcome(returnedSessionOutcome);
+        setShowAssessment(false);
+      }
     } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") {
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: "tut-cancelled-" + Date.now(),
+            sender: "tutor",
+            text: "Stopped. You can send a new question when ready.",
+            timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+          },
+        ]);
+        return;
+      }
       console.error("Failed to query tutor API:", error);
       setMessages((prev) => [
         ...prev,
@@ -168,8 +271,23 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
         },
       ]);
     } finally {
+      activeRequestRef.current = null;
       setIsSending(false);
     }
+  };
+
+  const handleStopResponse = () => {
+    activeRequestRef.current?.abort();
+    activeRequestRef.current = null;
+    setIsSending(false);
+    showToast("Response stopped.");
+  };
+
+  const handleSend = async () => {
+    if (!inputText.trim() || isSending) return;
+    const userText = inputText.trim();
+    setInputText("");
+    await submitTutorTurn(userText);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -214,6 +332,8 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
       }
 
       setUploadStatus(`${data.source.file_name} active (${data.source.chunk_count} chunks).`);
+      setSourceMetadata(data.source);
+      setConceptGraph(data.concept_graph || null);
       setActiveSources([
         {
           title: data.source.preview_title || data.source.file_name,
@@ -229,7 +349,13 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
           timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         },
       ]);
+      setHintLevel(1);
+      setCheckDifficulty("diagnostic");
+      setActiveQuestion(null);
+      setQuickCheck(null);
+      setSelectedQuickCheckIndex(null);
       setShowAssessment(false);
+      setSessionOutcome(null);
       showToast("Source uploaded and indexed successfully.");
     } catch (error) {
       const message = error instanceof Error ? error.message : "Upload failed.";
@@ -239,6 +365,38 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
       setIsUploading(false);
       event.target.value = "";
     }
+  };
+
+  const handleSelectQuickCheck = async (index: number) => {
+    if (!quickCheck || isSending || selectedQuickCheckIndex !== null) return;
+
+    setSelectedQuickCheckIndex(index);
+    const selectedOption = quickCheck.options[index];
+    const isDiagnostic = quickCheck.correct_index === undefined;
+    const isCorrect = isDiagnostic || quickCheck.correct_index === index;
+    onAddReflection({
+      id: "ref-" + Date.now(),
+      title: "Quick Understanding Check",
+      category: activeSource.title,
+      type: isDiagnostic || isCorrect ? "realization" : "reasoning",
+      content: `Prompt: ${quickCheck.prompt}\nSelected: ${selectedOption}\nFeedback: ${quickCheck.explanation || "No extra feedback provided."}`,
+      timestamp: "Just now in Chat",
+      rating: isDiagnostic ? 4 : isCorrect ? 5 : 3,
+    });
+
+    const quickCheckHistory: Message = {
+      id: "qc-" + Date.now(),
+      sender: "tutor",
+      text: `Quick check: ${quickCheck.prompt}\nOptions: ${quickCheck.options.join(" | ")}`,
+      timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+    };
+    const visibleAnswer = `I choose: ${selectedOption}`;
+    const backendAnswer = isDiagnostic
+      ? `Quick check response. Question: ${quickCheck.prompt}\nSelected answer: ${selectedOption}\nDiagnostic: true`
+      : `Quick check response. Question: ${quickCheck.prompt}\nSelected answer: ${selectedOption}\nCorrect: ${isCorrect}`;
+
+    showToast(isDiagnostic ? "Starting point saved." : isCorrect ? "Check submitted and saved." : "Check submitted and saved. The tutor will respond to it.");
+    await submitTutorTurn(visibleAnswer, backendAnswer, [quickCheckHistory]);
   };
 
   const handleSaveReflection = () => {
@@ -299,10 +457,9 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
         }`}
       >
         <div className="absolute top-4 right-4 z-10 hidden sm:block">
-          <button
-            onClick={() => setHintLevel((prev) => (prev % 4) + 1)}
-            className="bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 flex items-center gap-3 shadow-sm hover:border-indigo-500 hover:bg-white transition-all cursor-pointer active:scale-95"
-            title="Click to cycle active hint levels"
+          <div
+            className="bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 flex items-center gap-3 shadow-sm"
+            title="Tutor-controlled hint level"
           >
             <span className="font-display text-xs font-bold text-indigo-700">Hint Level {hintLevel}/4</span>
             <div className="flex gap-0.5">
@@ -316,7 +473,8 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
               ))}
             </div>
             <span className="font-sans text-[11px] text-slate-500 italic font-semibold">{getHintExplanation()}</span>
-          </button>
+            <span className="font-mono text-[10px] text-slate-400 uppercase">{checkDifficulty}</span>
+          </div>
         </div>
 
         <div className="flex-grow overflow-y-auto p-6 pb-28 space-y-6 hide-scrollbar">
@@ -364,6 +522,93 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
             </div>
           )}
 
+          {quickCheck && (
+            <div className="border border-indigo-100 rounded-2xl p-5 bg-white max-w-2xl mx-auto my-6 shadow-sm">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="material-symbols-outlined text-indigo-600 text-lg">quiz</span>
+                <h4 className="font-display text-xs font-bold uppercase tracking-wider text-indigo-800">
+                  Quick Check
+                </h4>
+              </div>
+              <p className="font-display text-sm font-bold text-slate-800 mb-4 leading-normal">
+                {quickCheck.prompt}
+              </p>
+              <div className="space-y-2.5">
+                {quickCheck.options.map((option, index) => {
+                  const isSelected = selectedQuickCheckIndex === index;
+                  const isCorrect = quickCheck.correct_index === index;
+                  const showFeedback = selectedQuickCheckIndex !== null;
+                  return (
+                    <button
+                      key={`${option}-${index}`}
+                      disabled={selectedQuickCheckIndex !== null}
+                      onClick={() => handleSelectQuickCheck(index)}
+                      className={`w-full text-left p-3.5 rounded-xl border text-xs leading-relaxed transition-all flex items-start gap-3 ${
+                        showFeedback && isSelected
+                          ? isCorrect || quickCheck.correct_index === undefined
+                            ? "bg-emerald-50 border-emerald-400 text-emerald-900"
+                            : "bg-rose-50 border-rose-400 text-rose-900"
+                          : "bg-slate-50 border-slate-200 hover:bg-white text-slate-700"
+                      }`}
+                    >
+                      <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 font-display text-[11px] font-black border bg-white text-slate-500 border-slate-200">
+                        {String.fromCharCode(65 + index)}
+                      </span>
+                      <span className="font-medium">{option}</span>
+                    </button>
+                  );
+                })}
+              </div>
+              {selectedQuickCheckIndex !== null && (
+                <div className="mt-4 p-3 bg-slate-50 border border-slate-100 rounded-xl text-[11px] leading-relaxed">
+                  {quickCheck.explanation && (
+                    <p className="font-sans text-slate-600">
+                      <span className="font-bold text-slate-800">Feedback: </span>
+                      {quickCheck.explanation}
+                    </p>
+                  )}
+                  <p className="mt-2 font-sans text-slate-500">
+                    Your answer is being sent to the tutor and saved to reflections.
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
+
+          {sessionOutcome?.completed && (
+            <div className="border border-emerald-200 rounded-2xl p-5 bg-emerald-50 max-w-2xl mx-auto my-6 shadow-sm">
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-xl bg-white text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100">
+                  <span className="material-symbols-outlined">verified</span>
+                </div>
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-display text-xs font-bold uppercase tracking-wider text-emerald-800">
+                    Concept Added to Learning Map
+                  </h4>
+                  <p className="font-sans text-sm text-slate-800 mt-2 leading-relaxed">
+                    You showed enough understanding for this concept. Confidence:{" "}
+                    <span className="font-bold">{Math.round(sessionOutcome.confidence_score * 100)}%</span>
+                  </p>
+                  {sessionOutcome.suggested_next_concept?.name && (
+                    <div className="mt-4 p-3 rounded-xl bg-white border border-emerald-100">
+                      <p className="font-display text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                        Source-Grounded Next Concept
+                      </p>
+                      <p className="font-display text-sm font-bold text-slate-900 mt-1">
+                        {sessionOutcome.suggested_next_concept.name}
+                      </p>
+                      {sessionOutcome.suggested_next_concept.description && (
+                        <p className="font-sans text-xs text-slate-600 mt-1 leading-relaxed">
+                          {sessionOutcome.suggested_next_concept.description}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+
           {showAssessment && (
             <div className="border border-slate-200 rounded-2xl p-5 bg-indigo-50/20 max-w-2xl mx-auto my-6 shadow-sm">
               <div className="flex items-center gap-2 mb-3">
@@ -401,11 +646,16 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
               placeholder="Ask a question from the active source..."
             />
             <button
-              disabled={!inputText.trim() || isSending}
-              onClick={handleSend}
-              className="absolute bottom-3 right-3 w-10 h-10 bg-indigo-600 disabled:bg-slate-300 text-white rounded-lg flex items-center justify-center hover:bg-indigo-700 active:scale-95 transition-all cursor-pointer"
+              disabled={!inputText.trim() && !isSending}
+              onClick={isSending ? handleStopResponse : handleSend}
+              className={`absolute bottom-3 right-3 w-10 h-10 text-white rounded-lg flex items-center justify-center active:scale-95 transition-all cursor-pointer ${
+                isSending
+                  ? "bg-rose-600 hover:bg-rose-700"
+                  : "bg-indigo-600 disabled:bg-slate-300 hover:bg-indigo-700"
+              }`}
+              title={isSending ? "Stop response" : "Send message"}
             >
-              <span className="material-symbols-outlined">send</span>
+              <span className="material-symbols-outlined">{isSending ? "stop" : "send"}</span>
             </button>
           </div>
 
@@ -516,11 +766,40 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
                   <span className="material-symbols-outlined">article</span>
                 </div>
                 <div className="min-w-0">
-                  <p className="font-display text-sm font-bold text-slate-900 break-words">{activeSource.title}</p>
-                  <p className="font-sans text-[11px] text-slate-500 mt-1">Current source preview or retrieved matching chunk.</p>
+                  <p className="font-display text-sm font-bold text-slate-900 break-words">
+                    {sourceMetadata?.detected_title || conceptGraph?.detected_title || activeSource.title}
+                  </p>
+                  <p className="font-sans text-[11px] text-slate-500 mt-1">
+                    {sourceMetadata?.subject || conceptGraph?.subject || "Current source preview or retrieved matching chunk."}
+                  </p>
+                  {(sourceMetadata?.concept_count || conceptGraph?.concepts?.length) && (
+                    <p className="font-mono text-[10px] text-slate-400 mt-1">
+                      {sourceMetadata?.concept_count || conceptGraph?.concepts?.length} source concepts detected
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
+
+            {conceptGraph?.concepts?.length ? (
+              <div className="bg-white border border-slate-200 rounded-xl p-4">
+                <h4 className="font-display text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">
+                  Source Learning Map
+                </h4>
+                <div className="space-y-2">
+                  {conceptGraph.concepts.slice(0, 5).map((concept) => (
+                    <div key={concept.id || concept.name} className="p-3 rounded-lg bg-slate-50 border border-slate-100">
+                      <p className="font-display text-xs font-bold text-slate-800">{concept.name}</p>
+                      {concept.source_refs?.[0] && (
+                        <p className="font-mono text-[10px] text-slate-400 mt-1">
+                          {concept.source_refs[0].page_number ? `Page ${concept.source_refs[0].page_number}` : "Source linked"}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
 
             <div className="space-y-3 font-sans text-xs text-slate-700 leading-relaxed">
               <p className="whitespace-pre-wrap">{activeSource.text}</p>

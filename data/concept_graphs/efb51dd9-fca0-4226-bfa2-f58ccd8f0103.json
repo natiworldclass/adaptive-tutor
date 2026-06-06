@@ -1,0 +1,107 @@
+{
+  "source_id": "efb51dd9-fca0-4226-bfa2-f58ccd8f0103",
+  "detected_title": "Gr10_PhysicalSciences_Learner_Eng",
+  "subject": "Physical Sciences",
+  "chapters": [
+    {
+      "chapter_number": null,
+      "title": "Introduction to Physical Sciences",
+      "pages": [
+        7,
+        8
+      ],
+      "concepts": [
+        "physical_universe",
+        "scientific_inquiry"
+      ]
+    },
+    {
+      "chapter_number": null,
+      "title": "Periodic Table",
+      "pages": [
+        2
+      ],
+      "concepts": [
+        "periodic_table",
+        "chemical_elements",
+        "lanthanides",
+        "actinides",
+        "transition_metals"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "periodic_table",
+      "name": "Periodic Table",
+      "description": "A tabular display of chemical elements organized by atomic number, electron configuration, and recurring chemical properties.",
+      "source_refs": [
+        {
+          "title": "Gr10_PhysicalSciences_Learner_Eng - Page 2 Part 1",
+          "page_number": 2,
+          "chapter_number": null
+        },
+        {
+          "title": "Gr10_PhysicalSciences_Learner_Eng - Page 2 Part 2",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [],
+      "next_concepts": [
+        "chemical_elements"
+      ]
+    },
+    {
+      "id": "chemical_elements",
+      "name": "Chemical Elements",
+      "description": "Pure substances consisting of atoms which all have the same number of protons in their atomic nuclei.",
+      "source_refs": [
+        {
+          "title": "Gr10_PhysicalSciences_Learner_Eng - Page 2 Part 1",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "periodic_table"
+      ],
+      "next_concepts": [
+        "transition_metals"
+      ]
+    },
+    {
+      "id": "physical_universe",
+      "name": "Physical Universe",
+      "description": "The totality of all space, time, matter, and energy that can be studied through physical sciences.",
+      "source_refs": [
+        {
+          "title": "Gr10_PhysicalSciences_Learner_Eng - Page 7 Part 1",
+          "page_number": 7,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [],
+      "next_concepts": [
+        "scientific_inquiry"
+      ]
+    },
+    {
+      "id": "scientific_inquiry",
+      "name": "Scientific Inquiry",
+      "description": "The process of investigating, analyzing, and understanding the physical universe to drive technological progress.",
+      "source_refs": [
+        {
+          "title": "Gr10_PhysicalSciences_Learner_Eng - Page 7 Part 1",
+          "page_number": 7,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "physical_universe"
+      ],
+      "next_concepts": []
+    }
+  ],
+  "generated_by": "gemini"
+}

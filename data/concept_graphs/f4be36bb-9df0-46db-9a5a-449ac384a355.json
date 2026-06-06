@@ -1,0 +1,255 @@
+{
+  "source_id": "f4be36bb-9df0-46db-9a5a-449ac384a355",
+  "detected_title": "THE BUILD \u00b7 WEEK 1 SUBMISSION",
+  "subject": "Education Technology",
+  "chapters": [],
+  "concepts": [
+    {
+      "id": "generic-ai",
+      "name": "Generic AI",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 1 Part 1.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 1 Part 1",
+          "page_number": 1,
+          "chapter_number": null
+        },
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 1 Part 2",
+          "page_number": 1,
+          "chapter_number": null
+        },
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 2 Part 1",
+          "page_number": 2,
+          "chapter_number": null
+        },
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 2 Part 2",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [],
+      "next_concepts": [
+        "One-Size-Fits-All Explanations"
+      ]
+    },
+    {
+      "id": "one-size-fits-all-explanations",
+      "name": "One-Size-Fits-All Explanations",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 1 Part 1.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 1 Part 1",
+          "page_number": 1,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Generic AI"
+      ],
+      "next_concepts": [
+        "Understanding Verification"
+      ]
+    },
+    {
+      "id": "understanding-verification",
+      "name": "Understanding Verification",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 1 Part 1.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 1 Part 1",
+          "page_number": 1,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "One-Size-Fits-All Explanations"
+      ],
+      "next_concepts": [
+        "Different Equations During"
+      ]
+    },
+    {
+      "id": "different-equations-during",
+      "name": "Different Equations During",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 1 Part 1.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 1 Part 1",
+          "page_number": 1,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Understanding Verification"
+      ],
+      "next_concepts": [
+        "Specific Curriculum"
+      ]
+    },
+    {
+      "id": "specific-curriculum",
+      "name": "Specific Curriculum",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 1 Part 2.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 1 Part 2",
+          "page_number": 1,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Different Equations During"
+      ],
+      "next_concepts": [
+        "Textbook-Grounded Answers"
+      ]
+    },
+    {
+      "id": "textbook-grounded-answers",
+      "name": "Textbook-Grounded Answers",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 1 Part 2.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 1 Part 2",
+          "page_number": 1,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Specific Curriculum"
+      ],
+      "next_concepts": [
+        "The Core Problems"
+      ]
+    },
+    {
+      "id": "the-core-problems",
+      "name": "The Core Problems",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 1 Part 2.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 1 Part 2",
+          "page_number": 1,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Textbook-Grounded Answers"
+      ],
+      "next_concepts": [
+        "Professor Emphasis"
+      ]
+    },
+    {
+      "id": "professor-emphasis",
+      "name": "Professor Emphasis",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 2 Part 1.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 2 Part 1",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "The Core Problems"
+      ],
+      "next_concepts": [
+        "Personalized Explanations"
+      ]
+    },
+    {
+      "id": "personalized-explanations",
+      "name": "Personalized Explanations",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 2 Part 1.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 2 Part 1",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Professor Emphasis"
+      ],
+      "next_concepts": [
+        "Learning Verification"
+      ]
+    },
+    {
+      "id": "learning-verification",
+      "name": "Learning Verification",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 2 Part 1.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 2 Part 1",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Personalized Explanations"
+      ],
+      "next_concepts": [
+        "Biggest Frustration"
+      ]
+    },
+    {
+      "id": "biggest-frustration",
+      "name": "Biggest Frustration",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 2 Part 2.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 2 Part 2",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Learning Verification"
+      ],
+      "next_concepts": [
+        "Trust Explanations"
+      ]
+    },
+    {
+      "id": "trust-explanations",
+      "name": "Trust Explanations",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 2 Part 2.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 2 Part 2",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Biggest Frustration"
+      ],
+      "next_concepts": [
+        "Actual Textbook"
+      ]
+    },
+    {
+      "id": "actual-textbook",
+      "name": "Actual Textbook",
+      "description": "Concept detected from WEEK_1_ONEPAGER_CLEAN - Page 2 Part 2.",
+      "source_refs": [
+        {
+          "title": "WEEK_1_ONEPAGER_CLEAN - Page 2 Part 2",
+          "page_number": 2,
+          "chapter_number": null
+        }
+      ],
+      "prerequisites": [
+        "Trust Explanations"
+      ],
+      "next_concepts": []
+    }
+  ],
+  "generated_by": "heuristic",
+  "heuristic_version": 2
+}
