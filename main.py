@@ -1029,6 +1029,7 @@ class AdaptiveTutorEngine:
         if "quick check response" not in message.lower():
             return {"is_quick_check": False}
 
+        question_match = re.search(r"Question:\s*(.+?)(?:\n|$)", message, flags=re.IGNORECASE | re.DOTALL)
         selected_match = re.search(r"Selected answer:\s*(.+?)(?:\n|$)", message, flags=re.IGNORECASE | re.DOTALL)
         correct_match = re.search(r"Correct:\s*(true|false)", message, flags=re.IGNORECASE)
         diagnostic_match = re.search(r"Diagnostic:\s*true", message, flags=re.IGNORECASE)
@@ -1038,6 +1039,7 @@ class AdaptiveTutorEngine:
 
         return {
             "is_quick_check": True,
+            "question": re.sub(r"\s+", " ", question_match.group(1)).strip() if question_match else "",
             "selected_answer": re.sub(r"\s+", " ", selected_match.group(1)).strip() if selected_match else "",
             "is_correct": correct_value,
             "is_diagnostic": bool(diagnostic_match) or correct_value is None,
@@ -1085,9 +1087,8 @@ class AdaptiveTutorEngine:
             # Diagnostic response: stay at current level, let check_difficulty advance
             return current, False
         if check.get("is_correct") is True:
-            # BUG FIX: correct answer — hold hint level but signal 'correct' so
-            # check_difficulty can advance (should_escalate used for hint, not difficulty)
-            return current, True  # True = "positive progress signal" used by check_difficulty
+            # Correct answer: keep hint support steady; let check difficulty advance separately.
+            return current, True
         if check.get("is_correct") is False:
             return min(current + 1, 4), True
         if learning_state in {"student_unsure", "asking_for_more_help"}:
@@ -1259,12 +1260,15 @@ class AdaptiveTutorEngine:
         base = (
             "You are a warm, conversational tutor for university students. "
             "Use simple words. Do not sound like a rigid worksheet. "
-            "Ask only one light question unless a short objective check is requested. "
+            "Teach before you test. Every response must begin with a plain-language explanation grounded in the source. "
+            "Do not open with a question and do not assume the student has already read the page. "
+            "After the explanation, ask at most one short question or attach one short objective check if it helps confirm understanding. "
             "Do not pressure the student or ask for a long answer. "
             "Use the retrieved source as ground truth and cite the source title when you use it. "
-            "If the student asks about a whole page or chapter without naming a specific concept, give a short overview of what that page/chapter is about, then ask one simple question to locate the confusing part. "
-            "Use the source learning map to notice prerequisite concepts. If the student likely needs a foundation first, ask a diagnostic question that reveals whether they understand that prerequisite. "
+            "If the student asks about a whole page or chapter without naming a specific concept, explain the central idea of that page/chapter first, then use one short question to locate the confusing part. "
+            "Use the source learning map to notice prerequisite concepts. If the student likely needs a foundation first, explain that foundation before asking a diagnostic question. "
             "Make quick_check difficulty match the provided check_difficulty. Diagnostic checks identify the student's starting point and should not have a correct_index. Easy checks ask recognition questions. Medium checks ask connection/application questions. Hard checks ask transfer, explanation, or source-evidence questions. "
+            "If check_difficulty is easy, medium, or hard, do not ask another 'which part is unclear' diagnostic question. Teach the selected focus and check understanding of that focus. "
             "Return strict JSON only with fields: text, quick_check. "
             "quick_check may be null, or an object with: prompt, options, correct_index, explanation. "
             "correct_index must be zero-based. Use 2 to 4 options only. "
@@ -1276,19 +1280,20 @@ class AdaptiveTutorEngine:
         level_rules = {
             1: (
                 "Hint level 1 strategy: orient. Do not give a full answer or solve the whole concept. "
-                "For a specific page/chapter request, give a very short page/chapter overview from the source first. "
+                "For a specific page/chapter request, give a very short page/chapter overview from the source first, in plain language. "
                 "Then ask one source-specific diagnostic question that checks the student's foundation or helps identify the confusing part. "
-                "Keep it to 2 or 3 short sentences. "
+                "Keep it to 2 or 3 short sentences and make sure the explanation comes before the question. "
                 "Avoid the exact phrase 'what do you already know'. "
                 "Do not use generic choices like 'what it means, why it matters, or how it works' unless those choices are tied to actual source content."
             ),
             2: (
                 "Hint level 2 strategy: narrow. Do not give the full answer. "
-                "Keep it to 2 or 3 short sentences. Point to the most useful part of the source and ask a concrete, low-pressure question about it."
+                "Keep it to 2 or 3 short sentences. Point to the most useful part of the source, explain it plainly, and ask a concrete, low-pressure question about it."
             ),
             3: (
                 "Hint level 3 strategy: similar_example. Give a simple analogy or nearby example, but do not simply dump the final answer. "
                 "Keep the example short. The student should still have a small thinking step left. "
+                "Start with a short explanation of the source idea, then use the example. "
                 "Include a quick_check with objective options if it would reduce typing burden."
             ),
             4: (
@@ -1316,6 +1321,90 @@ class AdaptiveTutorEngine:
             + f"The hint_strategy is {strategy}."
         )
 
+    def teaching_brief(self, sources: list, learning_direction: dict, student_focus: str = "") -> str:
+        source = sources[0] if sources else {}
+        summary = self.source_summary(source) if source else {
+            "title": self.display_material_title(),
+            "core": "the closest available idea in the uploaded source",
+            "steps": [],
+            "why": "The explanation must stay close to the uploaded material.",
+        }
+        current = learning_direction.get("current_concept") or {}
+        prerequisite = learning_direction.get("prerequisite_gap")
+        next_concept = learning_direction.get("next_concept") or {}
+
+        current_name = str(current.get("name") or "").strip()
+        prereq_name = ""
+        if isinstance(prerequisite, str):
+            prereq_name = prerequisite.strip()
+        elif isinstance(prerequisite, dict):
+            prereq_name = str(prerequisite.get("name") or "").strip()
+        next_name = str(next_concept.get("name") or "").strip()
+
+        lines = [
+            f"Source title: {summary['title']}",
+            f"Core idea from the source: {summary['core']}",
+        ]
+        if summary.get("steps"):
+            first_steps = [str(step).strip() for step in summary["steps"][:2] if str(step).strip()]
+            if first_steps:
+                lines.append("Helpful source details: " + " ".join(first_steps))
+        if current_name:
+            lines.append(f"Current concept label: {current_name}")
+        if prereq_name:
+            lines.append(f"Likely prerequisite: {prereq_name}")
+        if next_name:
+            lines.append(f"Likely next concept: {next_name}")
+        if student_focus:
+            lines.append(f"Student selected focus: {student_focus}")
+            lines.append("Next required action: teach this selected focus first, then ask a non-diagnostic check.")
+        lines.append(
+            "Instruction: explain the core idea in plain language first. Do not assume the student already read the page. "
+            "Only after that, ask one short check or attach one objective quick_check."
+        )
+        return "\n".join(lines)
+
+    def looks_question_led(self, text: str) -> bool:
+        stripped = re.sub(r"\s+", " ", text.strip().lower())
+        if not stripped:
+            return True
+        question_starts = (
+            "to help me",
+            "could you",
+            "can you",
+            "before we go deeper",
+            "let's check",
+            "which part",
+            "what part",
+            "do you",
+        )
+        return stripped.startswith(question_starts) or stripped.count("?") > 1
+
+    def reinforce_teaching_first(self, text: str, sources: list, learning_direction: dict, hint_level: int) -> str:
+        if hint_level > 2 or not sources:
+            return text.strip()
+
+        source = sources[0] if sources else {}
+        summary = self.source_summary(source) if source else {
+            "title": self.display_material_title(),
+            "core": "the closest available idea in the uploaded source",
+            "steps": [],
+            "why": "The explanation must stay close to the uploaded material.",
+        }
+        if not self.looks_question_led(text) and len(text.strip()) >= 160:
+            return text.strip()
+
+        prefix = f"Using {summary['title']}, the main idea is {summary['core']}."
+        if summary.get("steps"):
+            first_step = str(summary["steps"][0]).strip()
+            if first_step:
+                prefix += f" A helpful detail from the source is: {first_step}"
+        if not text.strip():
+            return prefix
+        if text.strip().startswith(prefix):
+            return text.strip()
+        return f"{prefix}\n\n{text.strip()}"
+
     def split_trailing_question(self, text: str) -> tuple[str, Optional[str]]:
         clean = text.strip()
         if "?" not in clean:
@@ -1329,25 +1418,164 @@ class AdaptiveTutorEngine:
         body = clean[: match.start(1)].strip()
         return body, question
 
-    def diagnostic_options_for_prompt(self, prompt: str, sources: list) -> Optional[list[str]]:
-        """Build source-aware diagnostic options from concept tags — no hardcoded content."""
-        tags = sources[0].get("concept_tags", []) if sources else []
-        lower = prompt.lower()
-        # Only inject pre-built options for the generic 'which part is unclear' prompt
-        if "main idea" in lower and ("key word" in lower or "unclear" in lower):
-            concept_label = tags[0] if tags else "the key term"
-            return [
-                f"The key word or phrase: '{concept_label}'",
-                "The main idea of the section",
-                "How this concept connects to the next point",
-            ]
-        # If concept tags available, offer them as diagnostic choices
-        if tags and len(tags) >= 2:
-            options = [f"The term '{tags[0]}'"]
-            options.append(f"The concept '{tags[1]}'")
-            options.append("How these ideas fit together")
-            return options
+    def diagnostic_options_for_prompt(self, prompt: str, sources: list, payload: ChatRequest, check_difficulty: str) -> Optional[list[str]]:
+        direction = self.build_learning_direction(
+            payload.active_question or payload.message,
+            sources,
+            "student_unsure",
+            check_difficulty,
+        )
+        current = direction.get("current_concept") or {}
+        next_concept = direction.get("next_concept") or {}
+        prereq = direction.get("prerequisite_gap")
+
+        current_name = str(current.get("name") or "").strip()
+        next_name = str(next_concept.get("name") or "").strip()
+        prereq_name = ""
+        if isinstance(prereq, str):
+            prereq_name = prereq.strip()
+        elif isinstance(prereq, dict):
+            prereq_name = str(prereq.get("name") or "").strip()
+
+        prompt_lower = prompt.lower()
+        prompt_mentions_current = bool(current_name and current_name.lower() in prompt_lower)
+
+        if check_difficulty == "diagnostic":
+            if prompt_mentions_current:
+                options = [current_name]
+                if prereq_name:
+                    options.append(prereq_name)
+                if next_name:
+                    options.append(next_name)
+                return options[:3]
+            return None
+
+        options = []
+        if check_difficulty == "easy":
+            if current_name:
+                options.append(current_name)
+            if prereq_name and prereq_name not in options:
+                options.append(prereq_name)
+            if next_name and next_name not in options:
+                options.append(next_name)
+            if len(options) >= 2:
+                return options[:3]
+
+        if check_difficulty == "medium":
+            if current_name:
+                options.append(f"Apply {current_name} to this page")
+            if prereq_name:
+                options.append(f"Go back to {prereq_name} first")
+            if next_name:
+                options.append(f"Use {next_name} as the next step")
+            if len(options) >= 2:
+                return options[:3]
+
+        if check_difficulty == "hard":
+            if current_name:
+                options.append(f"Explain {current_name} using evidence from the source")
+            if next_name:
+                options.append(f"Connect it to {next_name}")
+            if prereq_name:
+                options.append(f"Show why {prereq_name} matters here")
+            if len(options) >= 2:
+                return options[:3]
+
         return None
+
+    def clean_concept_label(self, value: str) -> str:
+        label = re.sub(r"\s+", " ", str(value or "")).strip()
+        label = re.sub(
+            r"^(the\s+)?(phrase or idea|prerequisite idea|follow-on idea|next idea|core concept)\s*:\s*",
+            "",
+            label,
+            flags=re.IGNORECASE,
+        ).strip()
+        return label
+
+    def concept_by_label(self, label: str, learning_direction: dict) -> dict:
+        clean_label = self.clean_concept_label(label).lower()
+        candidates = []
+        for key in ("current_concept", "next_concept"):
+            concept = learning_direction.get(key)
+            if isinstance(concept, dict):
+                candidates.append(concept)
+        prereq = learning_direction.get("prerequisite_gap")
+        if isinstance(prereq, dict):
+            candidates.append(prereq)
+
+        graph = self.current_concept_graph()
+        graph_concepts = graph.get("concepts", []) if isinstance(graph, dict) else []
+        candidates.extend([concept for concept in graph_concepts if isinstance(concept, dict)])
+
+        for concept in candidates:
+            name = self.clean_concept_label(str(concept.get("name") or ""))
+            concept_id = self.clean_concept_label(str(concept.get("id") or "")).replace("_", " ")
+            if clean_label and clean_label in {name.lower(), concept_id.lower()}:
+                return concept
+        return {}
+
+    def fallback_quick_check(
+        self,
+        sources: list,
+        learning_direction: dict,
+        check_difficulty: str,
+        student_focus: str = "",
+    ) -> Optional[dict]:
+        if check_difficulty == "diagnostic" or not sources:
+            return None
+
+        current = learning_direction.get("current_concept") or {}
+        next_concept = learning_direction.get("next_concept") or {}
+        current_name = self.clean_concept_label(student_focus) or self.clean_concept_label(str(current.get("name") or "")) or "the main idea"
+        next_name = str(next_concept.get("name") or "").strip()
+        selected_concept = self.concept_by_label(current_name, learning_direction) or current
+        concept_description = str(selected_concept.get("description") or "").strip()
+        summary = self.source_summary(sources[0])
+        source_hint = summary.get("core") or "the explanation in the uploaded source"
+
+        if check_difficulty == "easy":
+            options = [
+                concept_description or f"It is the main idea the source is explaining about {current_name}",
+                "It is unrelated to what the source is explaining",
+                "It is only a word to memorize, not an idea to understand",
+            ]
+            prompt = f"In this source, what does {current_name} mean?"
+            return {
+                "prompt": prompt,
+                "options": options,
+                "correct_index": 0,
+                "explanation": f"The strongest option should connect back to the source idea: {source_hint}",
+            }
+
+        if check_difficulty == "medium":
+            prompt = f"How does {current_name} connect to the main idea in this source?"
+            options = [
+                f"It helps explain the source's larger idea: {source_hint}",
+                "It is a separate idea that does not affect understanding",
+                "It only matters if the student memorizes the exact wording",
+            ]
+            return {
+                "prompt": prompt,
+                "options": options,
+                "correct_index": 0,
+                "explanation": "The best answer connects the selected concept back to the source's explanation, not just the wording.",
+            }
+
+        prompt = f"Which answer uses the source best to explain {current_name}?"
+        options = [
+            f"{current_name} matters because it helps explain the source's larger idea.",
+            f"{current_name} matters because it avoids using the source.",
+            f"{current_name} matters only because the term appears on the page.",
+        ]
+        if next_name:
+            options[0] = f"{current_name} matters because it leads into {next_name}, the next idea in the source."
+        return {
+            "prompt": prompt,
+            "options": options,
+            "correct_index": 0,
+            "explanation": "The strongest answer connects the concept back to source-grounded scientific study.",
+        }
 
     def align_quick_check_with_response(
         self,
@@ -1364,7 +1592,7 @@ class AdaptiveTutorEngine:
         body, response_question = self.split_trailing_question(text)
         if response_question:
             quick_check["prompt"] = response_question
-            text = body or "Let's check that with one quick choice."
+            text = body or "Let's check the source with one quick question."
 
         prompt = str(quick_check.get("prompt") or "").strip()
         if not prompt:
@@ -1372,20 +1600,31 @@ class AdaptiveTutorEngine:
 
         if "?" in text:
             text, _ignored = self.split_trailing_question(text)
-            text = text or "Let's check that with one quick choice."
+            text = text or "Let's check the source with one quick question."
 
         quick_check["prompt"] = prompt
-        if hint_level == 1:
-            diagnostic_options = self.diagnostic_options_for_prompt(prompt, sources)
+        if check_difficulty == "diagnostic":
+            diagnostic_options = self.diagnostic_options_for_prompt(prompt, sources, payload, check_difficulty)
             if diagnostic_options:
                 quick_check["options"] = diagnostic_options
                 quick_check.pop("correct_index", None)
                 quick_check["explanation"] = "No single option is wrong here. Your choice tells the tutor where to start."
+            return text.strip(), quick_check
 
-        # BUG FIX: removed hardcoded 'physical universe' quick_check override.
-        # Previously this unconditionally re-asked the same question whenever that
-        # phrase appeared anywhere in the source, ignoring actual conversation progress.
-        # The Gemini response generator now produces the appropriate next question.
+        diagnostic_phrases = (
+            "which part feels unclear",
+            "where you are starting from",
+            "what feels unclear",
+            "which part is confusing",
+            "before we go deeper",
+        )
+        if any(phrase in prompt.lower() for phrase in diagnostic_phrases):
+            return text.strip(), None
+
+        correct_index = quick_check.get("correct_index")
+        options = quick_check.get("options")
+        if not isinstance(correct_index, int) or not isinstance(options, list) or not (0 <= correct_index < len(options)):
+            return text.strip(), None
 
         return text.strip(), quick_check
 
@@ -1408,10 +1647,14 @@ class AdaptiveTutorEngine:
         history_text = "\n".join(
             f"{item.sender}: {item.text}" for item in payload.history[-5:]
         )
+        check_evidence = self.parse_quick_check_response(payload.message)
+        student_focus = check_evidence.get("selected_answer", "") if check_evidence.get("is_quick_check") else ""
         prompt = (
             "Recent conversation:\n"
             f"{history_text or '(no previous turns)'}\n\n"
             f"Active learning question:\n{payload.active_question or payload.message}\n\n"
+            "Teaching brief:\n"
+            f"{self.teaching_brief(sources, learning_direction, student_focus)}\n\n"
             "Source learning map:\n"
             f"{learning_map_context[:3000]}\n\n"
             "Structured learning direction:\n"
@@ -1453,6 +1696,8 @@ class AdaptiveTutorEngine:
 
             if not text:
                 text = self.fallback_reply(payload.message, sources, payload.mode)
+            else:
+                text = self.reinforce_teaching_first(text, sources, learning_direction, hint_level)
             if hint_level == 1:
                 text = self.ensure_level_one_diagnostic(text, sources)
 
@@ -1471,6 +1716,13 @@ class AdaptiveTutorEngine:
                         payload,
                         check_difficulty,
                     )
+            if quick_check is None and check_difficulty != "diagnostic":
+                quick_check = self.fallback_quick_check(
+                    sources,
+                    learning_direction,
+                    check_difficulty,
+                    student_focus,
+                )
 
             return {"text": text, "quick_check": quick_check}
         except Exception as exc:
@@ -1605,18 +1857,43 @@ class AdaptiveTutorEngine:
         )
 
     def ensure_level_one_diagnostic(self, text: str, sources: list) -> str:
-        """Append a generic diagnostic question if the AI forgot to include one."""
         if "?" in text:
             return text
-        # Build a concept-tag-driven question — no hardcoded source content
-        tags = sources[0].get("concept_tags", []) if sources else []
-        concept_hint = f" around '{tags[0]}'" if tags else ""
-        question = (
-            f"Before we go deeper, which part{concept_hint} feels unclear: "
-            "the key word, the main idea, or how it connects to what comes next?"
-        )
-        return f"{text.rstrip()}\n\n{question}"
 
+        source_prompt = self.current_source.detected_title if self.current_source and self.current_source.detected_title else self.current_source.file_name if self.current_source else ""
+        direction = self.build_learning_direction(
+            source_prompt,
+            sources,
+            "student_unsure",
+            "diagnostic",
+        )
+        current = direction.get("current_concept") or {}
+        next_concept = direction.get("next_concept") or {}
+        prereq = direction.get("prerequisite_gap")
+        current_name = str(current.get("name") or "").strip()
+        next_name = str(next_concept.get("name") or "").strip()
+        prereq_name = ""
+        if isinstance(prereq, str):
+            prereq_name = prereq.strip()
+        elif isinstance(prereq, dict):
+            prereq_name = str(prereq.get("name") or "").strip()
+
+        pieces = []
+        if current_name:
+            pieces.append(f"the idea of {current_name}")
+        if prereq_name:
+            pieces.append(f"the prerequisite {prereq_name}")
+        if next_name:
+            pieces.append(f"the next idea {next_name}")
+
+        if len(pieces) >= 2:
+            question = "Before we go deeper, which part feels unclear: " + ", ".join(pieces[:-1]) + ", or " + pieces[-1] + "?"
+        elif pieces:
+            question = f"Before we go deeper, which part feels unclear: {pieces[0]}?"
+        else:
+            question = "Before we go deeper, which part feels unclear?"
+
+        return f"{text.rstrip()}\n\n{question}"
     def fallback_reply(self, prompt: str, sources: list, mode: str = "step-step") -> str:
         if sources:
             return self.synthesize_fallback(prompt, sources[0], mode)
@@ -2113,3 +2390,4 @@ else:
             "status": "online",
             "message": "FastAPI is running. Start the Vite frontend with npm.cmd run dev.",
         }
+

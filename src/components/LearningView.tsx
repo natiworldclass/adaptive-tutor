@@ -372,7 +372,7 @@ export default function LearningView({ onAddReflection }: LearningViewProps) {
 
     setSelectedQuickCheckIndex(index);
     const selectedOption = quickCheck.options[index];
-    const isDiagnostic = quickCheck.correct_index === undefined;
+    const isDiagnostic = checkDifficulty === "diagnostic" && quickCheck.correct_index === undefined;
     const isCorrect = isDiagnostic || quickCheck.correct_index === index;
     onAddReflection({
       id: "ref-" + Date.now(),
